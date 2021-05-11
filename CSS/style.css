@@ -66,9 +66,10 @@ h1, h2, h3, h4, h6{
     font-size: 13px;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
+    color: #fff;
     list-style: none;
     padding: 0px 10px 0px 10px;
+    font-weight: 800;
 }
 
 .nav-menu a:before {
@@ -277,7 +278,7 @@ h1, h2, h3, h4, h6{
 /********* CONTATO ********/
 /* FOOTER  */
 #contato {
-    background: rgba(0,0,0,0.6);
+    background:#1d2840;
     padding: 50px 0px 20px 0px;
 }
 
@@ -312,7 +313,8 @@ h1, h2, h3, h4, h6{
 }
 
 #contato .col-md-2 img {
-    width: 142px;
+    width: 100px;
+    margin-top: 10px;
 }
 
 @media (max-width: 575.98px) {
@@ -905,7 +907,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 800;
     margin-bottom: 50px;
     text-align: left;
-    color: rgb(22, 21, 21);
+    color:#466fa6;
     top: 40px;
     margin-left: 40px;
 }
@@ -963,6 +965,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*configurando Sobre*/
+.sobre .bloco{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
 .sobre .title h1{
     position: relative;
@@ -970,11 +976,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 800;
     margin-bottom: 50px;
     text-align: left;
-    color: rgb(22, 21, 21);
+    color:#4a86bc;
     top: 40px;
-    margin-left: 40px;
-    
-    
+    margin-left: 40px; 
 }
 .sobre .content{
     position: relative;
@@ -982,6 +986,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
 }
 
 .sobre .content .col-left{
@@ -1015,6 +1020,9 @@ margin-top: 50px;
     font-size: 1em;
     color: black;
 }
+.sobre .content .col-right h4{
+    color: #466fa6;
+}
 .sobre .content .col-right h2{
     color: #fff;
 }
@@ -1026,8 +1034,11 @@ margin-top: 50px;
     align-items: center;
     padding-left: 10%;
     margin: 0 20px;
-
 }
+.sobre .content .col-right .img-logo img{
+    padding-left: 20px;
+}
+
 /*Parte 2 da IMG*/
 .sobre .content-1{
     position: relative;
@@ -1045,9 +1056,9 @@ margin-top: 50px;
 
 }
 .sobre .content-1 .col-right{
-position: relative;
-width: 45%;
-margin-top: 50px;
+    position: relative;
+    width: 45%;
+    margin-top: 50px;
 }
 
 .sobre .content-1 .col-right .img-card{
@@ -1071,6 +1082,9 @@ margin-top: 50px;
 }
 .sobre .content-1 .col-left h2{
     color: #fff;
+}
+.sobre .content-1 .col-left h4{
+    color: #466fa6;
 }
 .sobre{
     background-color:#fff;
@@ -1100,10 +1114,14 @@ margin-top: 50px;
 }
 
 /*AGENDA---------------------------------*/
+.Agenda{
+    background-color: #1d2840;
+    padding: 2px;
+}
 .Agenda .agenda-title{
     align-items: center;
 }
-.event-container {
+.Agenda .event-container {
     font-family: "Roboto", sans-serif;
     max-width: 800px;
     margin: 0 auto;
@@ -1111,7 +1129,7 @@ margin-top: 50px;
   }
 
 
-  .event-container .eventos {
+ .Agenda .event-container .eventos {
     box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
     display: flex;
     border-radius: 8px;
@@ -1119,7 +1137,7 @@ margin-top: 50px;
     
   }
   
-  .eventos .evento-left {
+  .Agenda .eventos .evento-left {
     background: #222;
     min-width: 82px;
     display: flex;
@@ -1132,16 +1150,16 @@ margin-top: 50px;
     border-radius: 8px 0 0 8px;
   }
   
-  .eventos .evento-left .data {
+  .Agenda .eventos .evento-left .data {
     font-size: 56px;
   }
   
-  .eventos .evento-left .Mes {
+  .Agenda .eventos .evento-left .Mes {
     font-size: 16px;
     font-weight: normal;
   }
   
-  .eventos .evento-right {
+  .Agenda .eventos .evento-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1149,21 +1167,21 @@ margin-top: 50px;
     background-color: #fff;
   }
   
-  .event-container .eventos .evento-right .evento-title{
+  .Agenda .event-container .eventos .evento-right .evento-title{
     font-size: 24px;
     margin: 24px 0 10px 0;
     color: #000000;
     text-transform: uppercase;
   }
-  .event-container .eventos .evento-right .evento-discricao{
+  .Agenda .event-container .eventos .evento-right .evento-discricao{
     font-size: 15px;
     margin: 15px 0 8px 0;
     color: #202020;
     
   }
   
-  .eventos .evento-right .evento-hora {
-    background: rgba(255, 255, 0, 0.521);
+  .Agenda .eventos .evento-right .evento-hora {
+    background: #4a87bc9c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1174,7 +1192,7 @@ margin-top: 50px;
     font-size: 14px;
   }
   
-  .eventos .evento-right .evento-hora img {
+  .Agenda .eventos .evento-right .evento-hora img {
     height: 20px;
     padding-right: 8px;
   }
@@ -1217,7 +1235,7 @@ margin-top: 50px;
     overflow: hidden;
 }
 .cont-inicio .transparente{
-    background: #0000008a;
+    background: #3634348a;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1227,8 +1245,6 @@ margin-top: 50px;
  }
  .logo{
     position: absolute;
-    /*color: #fff;
-    letter-spacing: 2px;*/
     line-height: 35px;
     top:20%;
     padding-left: 20%;
@@ -1253,18 +1269,21 @@ margin-top: 50px;
  }
 
 /*Depoimento---------------------->*/
-.depo_slider{
+.depiomento{
+    background-color: #1d2840;
+}
+.depiomento .depo_slider{
     top:10%;
     position: relative;
     width: 100%;
     padding: 0%;
 }
-.depo_myslider{
+.depiomento .depo_myslider{
     height: 100%;
     display: none;
     overflow: hidden;
 }
-.depo_myslider .transparente{
+.depiomento .depo_myslider .transparente{
    background: #0000008a;
    width: 100%;
    height: 100%;
@@ -1380,19 +1399,38 @@ margin-top: 50px;
  
 }
 .active, .depo_dot:hover{
-   border-color: rgba(185, 142, 24, 0.863);
+   border-color: #466fa6;
 }
 /*Apoio------------------------*/
-.apoio .titlo{
+.Apoio{
+    background-color: #fff;
+}
+
+.Apoio .titolo h1{
     position: relative;
     font-size: 2.2em;
     font-weight: 800;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     text-align: left;
-    color: #fff;
-    top: 40px;
+    color:#466fa6;
+    top: 10px;
     margin-left: 40px;
+}
 
+.Apoio .contener{
+    background-color: #fff;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction:  row;
+    margin-top: 0px;
+}
+.Apoio .contener .apoio1{
+    justify-content:center;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-bottom: 30px;
 }
 /*Cordenadores*/
 .coordenadores{
@@ -1405,7 +1443,7 @@ margin-top: 50px;
     font-weight: 800;
     margin-bottom: 50px;
     text-align: left;
-    color: rgb(22, 21, 21);
+    color:#466fa6;
     top: 40px;
     margin-left: 40px;
 }
@@ -1439,6 +1477,9 @@ margin-top: 50px;
    
 }
 /*galeria*/
+.galeria{
+    background-color: #1d2840;
+}
 .galeria .contentt{
     display: flex;
     justify-content: center;
@@ -1467,11 +1508,14 @@ margin-top: 50px;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: 0.5s ease;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition:all 0.3s;
 }
 .galeria .contentt .card .card-img img:hover{
-  transform: scale(1,2) ;
-
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1);
 }
 .galeria .titolo h1{
     position: relative;
@@ -1490,7 +1534,7 @@ margin-top: 50px;
 }
 .galeria .btn{
     color: aliceblue;
-    background: #919496;
+    background: #4a86bc;
     font-size: 1em;
     font-weight: 600;
     display:inline-block;
