@@ -1308,124 +1308,13 @@ margin-top: 50px;
         padding: 10px 0;
     }
 }
-/*Depoimento---------------------->*/
-.depiomento{
-    background-color: #1d2840;
-}
-.depiomento .depo_slider{
-    top:10%;
-    position: relative;
-    width: 100%;
-    padding: 0%;
-}
-.depiomento .depo_myslider{
-    height: 100%;
-    display: none;
-    overflow: hidden;
-}
-.depiomento .depo_myslider .transparente{
-   background: #0000008a;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 1;
-}
 
-
-.depo_tex{
-  position: absolute;
-  padding: 20px;
-  z-index: 10;
-  color: #fff;
-}
-.depo_tex p{
-   font-size: 20px;
-   text-align: center;
-}
-.depo_tex h3{
-    padding: 80px;
-    font-size: 20px;
-}
- .depo_tex h1{
-     text-align: center;
-     font-weight:bold;  
- }
-
-.depo_slider .depo_myslider img{
-   transform: scale(1.5, 1.5);
-   -webkit-animation-name: zoomin;
-   -webkit-animation-duration:40s;
-   animation-name: zoomin;
-   animation-duration: 40s;
-}
-@-webkit-keyframes zoomin{
-   from{transform: scale(1.2,1.2);}
-   to{transform: scale(1.5,1.5);}
-
-}
-@keyframes zoomin{
-   from{transform: scale(1,1);}
-   to{transform: scale(1.5,1.5);
-   }
-}
-@media screen and (max-width: 800px){
-            .depo_myslider{
-                height: 500px;
-            }
-                .depo_tex{
-                    line-height: 25px;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    -webkit-animation-name: posi2;
-                    -webkit-animation-duration:2s;
-                    animation-name: posi2;
-                    animation-duration: 2s;
-                }
-                @-webkit-keyframes posi2{
-                from{top:35%;}
-                to{top:50%}
-            }
-                @keyframes posi2{
-                    from{top:35%;}
-                    to{top:50%}
-            }
-            .depo_tex h1{
-                font-size: 5px;
-            }
-            .depo_tex p{
-                font-size: 3px;
-            }
-            .depo_tex h3{
-                font-size: 15px;
-            }
-}
-.depo_dotsbox{
-   position: absolute;
-   left: 50%;
-   transform: translate(-50%);
-   bottom: 20px;
-   cursor: pointer;
-   z-index: 20;
-}
-.depo_dot{
-   display: inline-block;
-   width: 15px;
-   height: 15px;
-   border: 3px solid rgb(255, 255, 255);
-   border-radius: 50%;
-   margin: 0 10px;
-   cursor: pointer;
- 
-}
 .active, .depo_dot:hover{
    border-color: #466fa6;
 }
 /*Apoio------------------------*/
 .Apoio{
-    background-color: #fff;
+    background-color: #1d2840;
 }
 
 .Apoio .titolo h1{
@@ -1434,7 +1323,7 @@ margin-top: 50px;
     font-weight: 800;
     margin-bottom: 10px;
     text-align: left;
-    color:#466fa6;
+    color:#fff;
     top: 10px;
     margin-left: 40px;
 }
@@ -1450,9 +1339,9 @@ margin-top: 50px;
 .Apoio .contener .apoio1{
     justify-content:center;
     margin-right: 25px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
 }
 .Apoio .contener .apoio1 .colEsquesrda1 .img3{
     width: 250px;
@@ -1598,144 +1487,3 @@ margin-top: 50px;
     }
     
 } 
-
-/*galeria*/
-.galeria{
-    background-color: #1d2840;
-}
-.galeria .contentt{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.galeria .contentt .card{
-    width: 340px;
-    margin: 15px;
-}
-.galeria .contentt .card .card-img{
-    position: relative;
-    width: 100%;
-    height: 260px;
-    overflow: hidden;
-    border-radius:10px;
- 
-}
-.galeria .contentt .card .card-img img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition:all 0.3s;
-}
-.galeria .contentt .card .card-img img:hover{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform:scale(1.1);
-}
-.galeria .titolo h1{
-    position: relative;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 50px;
-    text-align: left;
-    color: #fff;
-    top: 40px;
-    margin-left: 40px;
-}
-.galeria .title {
-    align-items: center;
-    padding-left: 45%;
-    padding-bottom: 20px;
-}
-.galeria .btn{
-    color: aliceblue;
-    background: #4a86bc;
-    font-size: 1em;
-    font-weight: 600;
-    display:inline-block;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: 0.5s ease;
-    align-items: center;
-    top: 40px;
-}
-.galeria .btn:hover{
-    background:#fff;
-    color: #000;
-}
-/*Area de noticia*/
-.Cases{
-    background-color: #fff;
-}
-.Cases .titlo h1{
-    position: relative;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 50px;
-    text-align: left;
-    color:#466fa6;
-    top: 40px;
-    margin-left: 40px;
-}
-.Cases .linha{
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    flex-direction:  row;
-    margin-top: 0px;
-}
-.Cases .linha .card{
-    background: #fff;
-    width: 300px;
-    margin: 10px;
-    padding: 25px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 5px rgba(1 1 1 /15%);
-    border-radius:10px;
-
-}
-/*IMG DE FUNDO DOS CARDS*/
-.Cases .linha .card .imagem-evento img{
-    padding: 1px;
-    border-radius: 10px;
-    align-items: center;
-    width: 280px;
-}
-
-
-.Cases .linha .card .imagem-evento h3{
-    color: black;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-
-}
-
-.Cases .linha .card .imagem-evento{
-    overflow: hidden;
-}
-.Cases .linha .card .imagem-evento img{
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition:all 0.3s;
-}
-.Cases .linha .card .imagem-evento:hover img{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform:scale(1.1);
-}
-.case .linha .card a{
-    text-decoration: none;
-}
