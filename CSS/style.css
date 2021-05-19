@@ -126,12 +126,24 @@ h1, h2, h3, h4, h6{
 #contato .espaco {
     float: left;
     margin: 0 15px;
+
 }
 
-#contato .col-md-2 img {
-    width: 100px;
+
+#contato .col-md-2 .logo-roda{
+    width: 80px;
     margin-top: 10px;
 }
+#contato .col-md-2 .insta{
+    width: 40px;
+    
+}
+
+/*
+#contato .col-md-4 {
+    
+
+}*/
 
 @media (max-width: 575.98px) {
 
@@ -147,27 +159,7 @@ h1, h2, h3, h4, h6{
         font-size: 1em;
     }
 
-    /* iniciativas */
-
-    #iniciativas .col-sm-12 {
-        text-align: center;
-    }
-
-    #iniciativas img {
-        width: 200px;
-    }
-
-    #iniciativas img:hover {
-        width: 210px;
-    }
-
-    #iniciativas h4{
-        margin-left: 50px;
-        margin-top: 15px;
-        font-size: 0.9em;
-        text-align: center;
-    }
-
+   
     /* sobre */
     #sobre h1.ingles {
         color: rgba(0, 0, 0, 0.2);
@@ -256,7 +248,15 @@ h1, h2, h3, h4, h6{
 
     #contato .espaco img {
         width: 20px;
-        margin-top: 20px;
+        margin-right: 600px;
+    }
+    #contato .col-md-2 .insta{
+        width: 30px;
+    }
+    #contato .col-md-2 .logo-roda{
+        width: 80px;
+        margin-top:auto;
+        margin-left: 10px;
     }
 
 }
@@ -504,6 +504,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     #contato .espaco img {
         width: 30px;
         margin-top: 10px;
+    }
+    #contato .col-md-2 .insta{
+        width: 40px;
     }
 
 }
@@ -1215,7 +1218,6 @@ margin-top: 50px;
     display: flex;
     border-radius: 8px;
     margin: 32px 0;
-    
   }
   
   .Agenda .eventos .evento-left {
@@ -1224,11 +1226,12 @@ margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #eee;
+    color: #fff;
     padding: 8px 48px;
     font-weight: bold;
     text-align: center;
     border-radius: 8px 0 0 8px;
+
   }
   
   .Agenda .eventos .evento-left .data {
@@ -1246,6 +1249,8 @@ margin-top: 50px;
     justify-content: center;
     padding: 0 24px;
     background-color: #fff;
+    width: 700px;
+
   }
   
   .Agenda .event-container .eventos .evento-right .evento-title{
@@ -1307,7 +1312,13 @@ margin-top: 50px;
     .eventos .evento-left .eveto-data .data{
         padding: 10px 0;
     }
+    .Agenda .eventos .evento-right {
+     width: auto;
+    }
+
 }
+
+
 /*Depoimento---------------------->*/
 .depiomento{
     background-color: #1d2840;
@@ -1425,7 +1436,7 @@ margin-top: 50px;
 }
 /*Apoio------------------------*/
 .Apoio{
-    background-color: #fff;
+    background-color: #1d2840;
 }
 
 .Apoio .titolo h1{
@@ -1434,7 +1445,7 @@ margin-top: 50px;
     font-weight: 800;
     margin-bottom: 10px;
     text-align: left;
-    color:#466fa6;
+    color:#fff;
     top: 10px;
     margin-left: 40px;
 }
