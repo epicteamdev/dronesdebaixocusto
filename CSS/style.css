@@ -789,6 +789,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 /*configurando Sobre*/
+.sobre a{
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.sobre a:hover {
+	text-decoration: none; 
+	color: #2dc997;
+	}
 .sobre .bloco{
     padding-left: 60px;
     padding-right: 60px;
@@ -905,6 +916,43 @@ margin-top: 50px;
 
     } 
 } 
+@media (min-width: 551px) and (max-width: 646.98px){
+
+    .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 2%;
+        width: 350px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .epic{
+        
+        width: 100px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .labtec{
+        margin-left: 20%;
+        width: 100px;
+
+    } 
+
+  } 
+  @media (min-width: 647px) and (max-width: 991.98px){
+       
+    .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 2%;
+        width: 350px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .epic{
+        
+        width: 100px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .labtec{
+        
+        width: 100px;
+
+    }  
+}
 
 @media (min-width: 551px) and (max-width: 991.98px){
     .sobre .bloco {
@@ -932,22 +980,7 @@ margin-top: 50px;
     }
     .sobre  .bloco .content .col-right p{
         font-size: 1em;
-    } 
-    .sobre  .bloco .content .col-right .img-logo .seduc{
-        margin-left: 2%;
-        width: 350px;
-
-    } 
-    .sobre  .bloco .content .col-right .img-logo .epic{
-        
-        width: 100px;
-
-    } 
-    .sobre  .bloco .content .col-right .img-logo .labtec{
-        
-        width: 100px;
-
-    } 
+    }
   } 
 
 @media (min-width: 992px) and (max-width: 1200.98px) {
@@ -1202,6 +1235,18 @@ margin-top: 50px;
     background-color: #1d2840;
     padding: 2px;
 }
+.Agenda a{
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.Agenda a:hover {
+	text-decoration: none; 
+	color: #2dc997;
+	}
+
 .Agenda .agenda-title{
     align-items: center;
 }
@@ -1210,15 +1255,13 @@ margin-top: 50px;
     max-width: 800px;
     margin: 0 auto;
     
-  }
-
-
+ }
  .Agenda .event-container .eventos {
     box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
     display: flex;
     border-radius: 8px;
     margin: 32px 0;
-  }
+}
   
   .Agenda .eventos .evento-left {
     background: #222;
