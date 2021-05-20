@@ -139,13 +139,123 @@ h1, h2, h3, h4, h6{
     
 }
 
-/*
-#contato .col-md-4 {
+@media (max-width: 360px) {
+    #nav-menu-container {
+        display: none;
+    }
+
+    #home h1 {
+        font-size: 2em;
+    }
+
+    #home h3 {
+        font-size: 1em;
+    }
+
+   
+    /* sobre */
+    #sobre h1.ingles {
+        color: rgba(0, 0, 0, 0.2);
+        font-size: 4em;
+        text-align: center;
+        top: -25px;
+        left: 200px;
+    }
+
+    #sobre h1.portugues {
+        position: absolute;
+        left: 160px;
+        color: black;
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    #sobre p {
+        margin-top: 180px;
+    } 
     
+    #eq-epic {
+        position: absolute;
+        text-align: center;
+        font-size: 1.9em;
+        left: 155px;
+        top: 240px;
+    }
+    
+    #eq-team {
+        position: absolute;
+        left: 180px;
+        top: 260px;
+        color: rgba(0, 0, 0, 0.2);
+        font-size: 2em;
+    }
 
-}*/
+    .owl-carousel {
+        top: 80px;
+    }
 
-@media (max-width: 575.98px) {
+    #botao_anterior, #botao_proximo {
+        display: none;
+    }
+
+    /*contato */
+    #contato {
+        background:#1d2840;;
+        padding: 50px 0px 20px 0px;
+    }
+
+    #contato img {
+        width: 110px;
+        margin-bottom: 20px;
+    }
+
+    #contato h4 {
+        color: #919496;
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-top: 15px;
+    }
+
+    #contato .navbar-nav a {
+        color: white;
+        font-size: 0.9em;
+    }
+
+    #contato .navbar-nav a:hover {
+        color: yellow;
+        font-size: 0.9em;
+        text-decoration: none;
+    }
+
+    #contato ul {
+        list-style: none;
+    }
+
+    #contato ul li {
+        margin: 5px 0px;
+    }
+
+    #contato .espaco {
+        margin: 0 15px 0px 0px;
+    }
+
+    #contato .espaco img {
+        width: 20px;
+        margin-right: 600px;
+    }
+    #contato .col-md-2 .insta{
+        width: 30px;
+    }
+    #contato .col-md-2 .logo-roda{
+        width: 80px;
+        margin-top:auto;
+        margin-left: 10px;
+    }
+}
+
+
+
+@media (min-width: 361px) and (max-width: 575.98px){
 
     #nav-menu-container {
         display: none;
@@ -375,7 +485,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #fff;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 768.98px) {
 
     #nav-menu-container {
         display: none;
@@ -390,28 +500,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 
     /* INICIATIVAS */
-
-    #iniciativas .col-md-4 {
-        text-align: center;
-    }
-
-    #iniciativas img{
-        width: 250px;
-    }
-
-    #iniciativas img:hover{
-        width: 260px;
-    }
-
-    #iniciativas h4 {
-        margin-left: 20px;
-        font-size: 1em;
-    }
-    #iniciativas h1 {
-        margin-left: 20px;
-        font-size: 1em;
-        color: #fff;
-    }
 
     /* sobre */
     #sobre h1.ingles {
@@ -511,7 +599,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
   
-@media (min-width: 768px) and (max-width: 991.98px){  
+@media (min-width: 769px) and (max-width: 991.98px){  
     #sobre h1.ingles {
         color: rgba(0, 0, 0, 0.2);
         font-size: 5em;
@@ -728,8 +816,51 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
  }
 /*CAPA----- ajustes moobile*/
+@media (max-width: 360px) {
 
-@media (max-width: 550px) {
+    .home .inicio .cont-inicio .imgfundo{
+        width: 900px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 40px;
+        z-index: 10;
+        position: absolute;
+        width: 300px;
+    }
+}
+@media (min-width: 361px)and (max-width:450.9px) {
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 800px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 50px;
+        margin-left: 50px;
+        z-index: 10;
+        position: absolute;
+        width: 300px;
+    }
+}
+@media (min-width: 451px)and (max-width:549.9px){
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 900px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 45px;
+        margin-left: 45px;
+        z-index: 10;
+        position: absolute;
+        width: 350px;
+    }
+}
+
+
+
+@media (min-width: 550px) and (max-width: 550.9px){
 
     .home .inicio .cont-inicio .imgfundo{
         width: 1000px;
@@ -788,6 +919,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         width:1000px;
     }
 }
+
 /*configurando Sobre*/
 .sobre a{
     font-size: 13px;
@@ -874,7 +1006,91 @@ margin-top: 50px;
     padding-left: 20px;
 }
 /*SOBRE ajustes moobile*/
-@media (max-width: 550px) {
+@media(max-width: 350px){
+    .sobre .bloco {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sobre .title h1{
+        font-size: 1.8em;
+    }
+    .sobre  .bloco .content{
+        flex-direction: column;
+    
+    }
+    .sobre  .bloco .content .column{
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .sobre .content .col-left .img-card {
+        min-height: 0px;
+    }
+    .sobre  .bloco .content .col-right .content-title{
+            font-size: 1.4em;
+    }
+    .sobre  .bloco .content .col-right p{
+        font-size: 0.8em;
+    } 
+    .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 2%;
+        width: 300px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .epic{
+        
+        width: 100px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .labtec{
+        margin-left: 10%;
+        width: 100px;
+
+    } 
+}
+@media(min-width: 351px) and (max-width: 549.99px){
+    .sobre .bloco {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sobre .title h1{
+        font-size: 1.8em;
+    }
+    .sobre  .bloco .content{
+        flex-direction: column;
+    
+    }
+    .sobre  .bloco .content .column{
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .sobre .content .col-left .img-card {
+        min-height: 0px;
+    }
+    .sobre  .bloco .content .col-right .content-title{
+            font-size: 1.4em;
+    }
+    .sobre  .bloco .content .col-right p{
+        font-size: 0.8em;
+    } 
+    .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 12%;
+        width: 300px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .epic{
+        
+        width: 100px;
+
+    } 
+    .sobre  .bloco .content .col-right .img-logo .labtec{
+        margin-left: 20%;
+        width: 100px;
+
+    } 
+}
+@media (min-width: 550px) and (max-width: 550.99px) {
     .sobre .bloco {
         padding-left: 20px;
         padding-right: 20px;
@@ -919,7 +1135,7 @@ margin-top: 50px;
 @media (min-width: 551px) and (max-width: 646.98px){
 
     .sobre  .bloco .content .col-right .img-logo .seduc{
-        margin-left: 2%;
+        margin-left: 12%;
         width: 350px;
 
     } 
@@ -981,6 +1197,9 @@ margin-top: 50px;
     .sobre  .bloco .content .col-right p{
         font-size: 1em;
     }
+    .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 20%;
+    }
   } 
 
 @media (min-width: 992px) and (max-width: 1200.98px) {
@@ -1003,9 +1222,9 @@ margin-top: 50px;
         min-height: 100px;
     }
     .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 20%;
         width: 350px;
-
-    } 
+    }
     .sobre  .bloco .content .col-right .img-logo .epic{
         
         width: 150px;
@@ -1019,24 +1238,41 @@ margin-top: 50px;
 } 
 
 
-@media (min-width: 1200.98px) and (max-width: 1500.98px) {
-        .sobre  .bloco .content .col-right .content-title{
+@media (min-width: 1200.98px) and (max-width: 1399.98px) {
+    .sobre  .bloco .content .col-right .content-title{
             font-size: 1.5em;
     }
     .sobre  .bloco .content .col-right p{
         font-size: 0.8em;
     } 
-    .sobre .content .col-left .img-card {
-        min-height: 0px;
-    }
+  
     .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 50px;
         width: 400px;
 
     } 
     .sobre  .bloco .content .col-right .img-logo .labtec{
-        margin-left: 100px;
+        margin-left: 150px;
         width: 120px;
+    } 
+    
+}
+@media (min-width: 1400px) and (max-width: 1500.98px) {
+    .sobre  .bloco .content .col-right .content-title{
+            font-size: 1.5em;
+    }
+    .sobre  .bloco .content .col-right p{
+        font-size: 0.8em;
+    } 
+  
+    .sobre  .bloco .content .col-right .img-logo .seduc{
+        margin-left: 100px;
+        width: 400px;
 
+    } 
+    .sobre  .bloco .content .col-right .img-logo .labtec{
+        margin-left: 200px;
+        width: 120px;
     } 
     
 }
@@ -1126,7 +1362,67 @@ margin-top: 50px;
 
 }
 /*Sobre ajustes moobile*/
-@media (max-width: 550px) {
+@media(max-width: 344px){
+    .sobre  .bloco .content-1{
+        flex-direction: column;
+    
+    }
+    .sobre  .bloco .content-1 .column{
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .sobre  .bloco .content-1 .col-left .content-title{
+        font-size: 1.4em;
+    }
+    .sobre  .bloco .content-1 .col-left p{
+    font-size: 0.8em;
+    }
+    .sobre .content-1 .col-left {
+        
+        padding-left: 0px;
+    }  
+    .sobre .content-1 .col-right .img-card{
+        min-height: 10px;
+        margin-bottom: 20px;
+    }
+    .sobre .content-1 .col-left .img-logo1 img{
+            width: 100px;
+    }
+    
+}
+@media(min-width: 345px) and (max-width: 549.99px){
+     .sobre  .bloco .content-1{
+        flex-direction: column;
+    
+    }
+    .sobre  .bloco .content-1 .column{
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .sobre  .bloco .content-1 .col-left .content-title{
+        font-size: 1.4em;
+    }
+    .sobre  .bloco .content-1 .col-left p{
+    font-size: 0.8em;
+    }
+    .sobre .content-1 .col-left {
+        
+        padding-left: 0px;
+    }  
+    .sobre .content-1 .col-right .img-card{
+        min-height: 10px;
+        margin-bottom: 20px;
+    }
+    .sobre .content-1 .col-left .img-logo1{
+        padding-left: 60px;
+    }
+    .sobre .content-1 .col-left .img-logo1 img{
+        width: 130px;
+    }
+}
+@media(min-width: 550px) and (max-width: 550.99px){
     
     .sobre  .bloco .content-1{
         flex-direction: column;
@@ -1215,7 +1511,7 @@ margin-top: 50px;
     }
     .sobre .content-1 .col-right .img-card img{
       
-        width: 620px;
+        width: 550px;
     }
     .sobre  .bloco .content-1 .col-left .img-logo1 img{
         width: 100px;
