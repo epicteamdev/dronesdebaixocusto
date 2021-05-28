@@ -764,13 +764,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     color:#fff;
 }
 .CAPA .contener  .titlo-capa{
-    text-align: center;
-    padding: 40px;
-    align-items: center;
+    padding-top: 40px; 
+    padding-left: 25%; 
+    padding-bottom: 1px;
 }
 .CAPA .contener  .titlo-capa h1{
     font-size: 4em;
     font-weight: 600;
+    text-transform: uppercase;
+    color:#fff;
+}
+.CAPA .contener  .titlo-capa h2{
+    font-size: 2em;
     text-transform: uppercase;
     color:#fff;
 }
@@ -813,7 +818,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     padding-top: 40px;  
     padding-right: 10%;
+    padding-bottom: 1px;
 }
+
+.img-vidio-capa .texto h2{
+    font-size: 2em;
+}
+.img-vidio-capa .texto h3{
+    font-size: 1.6em;
+   
+}
+.img-vidio-capa .texto p{
+    font-size: 1.2em;
+}
+
 .img-vidio-capa .img{
     padding-top: 20px;
     padding-bottom:20px;
@@ -834,12 +852,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     object-fit: cover;
     border-radius: 10px;
 }
-.img-vidio-capa .texto p{
-    font-size: 1.1em;
-}
-.img-vidio-capa .texto h2{
-    font-size: 2.4em;
-}
+
 
 @media(max-width: 300px) {
     .CAPA{
@@ -857,12 +870,19 @@ body.mobile-nav-active #mobile-nav-toggle {
         font-weight: 550;
     }
     .CAPA .contener  .titlo-capa{
-        text-align: center;
-        padding:5px;
+            padding-top: 40px; 
+            padding-left: 20%; 
+            padding-bottom: 1px;
+        
     }
     .CAPA .contener  .titlo-capa h1{
         font-size: 2.6em;
         font-weight: 600;
+    }
+    .CAPA .contener  .titlo-capa h2{
+        font-size: 1.6em;
+        text-transform: uppercase;
+        color:#fff;
     }
     .img-vidio-capa{
         background-color: #fff;
@@ -889,6 +909,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .texto h2{
         font-size: 2em;
     }
+    .img-vidio-capa .texto h3{
+        font-size: 1.2em;
+    }
 
 }
 @media (min-width: 300.1px)and (max-width:360px) {
@@ -913,6 +936,11 @@ body.mobile-nav-active #mobile-nav-toggle {
         .CAPA .contener  .titlo-capa h1{
             font-size: 2.5em;
             font-weight: 600;
+        }
+        .CAPA .contener  .titlo-capa h2{
+            font-size: 1.6em;
+            text-transform: uppercase;
+            color:#fff;
         }
         .img-vidio-capa{
            
@@ -939,6 +967,9 @@ body.mobile-nav-active #mobile-nav-toggle {
         .img-vidio-capa .texto h2{
             font-size: 2em;
         }
+        .img-vidio-capa .texto h3{
+            font-size: 1.3em;
+        }
     
     
  
@@ -960,7 +991,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
     .CAPA .contener  .titlo-capa{
         text-align: center;
-        padding:5px;
+        padding:8px;
     }
     .CAPA .contener  .titlo-capa h1{
         font-size: 2.5em;
@@ -991,7 +1022,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .texto h2{
         font-size: 2em;
     }
-
+    .img-vidio-capa .texto h3{
+        font-size: 1.3em;
+    }
 
 }
 @media (min-width: 400.1px)and (max-width:500.9px){
@@ -1269,7 +1302,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
     .img-vidio-capa{
         background-color: #fff;
-        padding-left:  25%; 
+        padding-left:  15%; 
         padding-right: 25%; 
         padding-top: 10px; 
     }
