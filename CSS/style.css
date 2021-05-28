@@ -2123,15 +2123,12 @@ margin-top: 50px;
 }
 /*Area de noticia*/
 
-.Cases{
-    background-color: #fff;
-}
-.Cases .contener .card a{
+.Cases .linha .card a{
     font-style: none;
     color: rgba(0, 0, 0, 0.808);
     text-decoration: none;  
 }
-.Cases .contener .card a:hover {
+.Cases .linha .card a:hover {
     text-decoration: none; 
     color: #070707;
     
@@ -2147,7 +2144,7 @@ margin-top: 50px;
     margin-bottom: 50px;
     text-align: left;
 
-    color:#466fa6;
+    color:#fff;
     top: 40px;
     margin-left: 40px;
 }
@@ -2163,19 +2160,18 @@ margin-top: 50px;
     width: 300px;
     margin: 10px;
     padding: 25px;
-
     color:#fff;
     top: 40px;
     margin-left: 40px;
 }
-.Cases .contener{
+.Cases .linha{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
     flex-direction:row;
     margin-top: 0px;
 }
-.Cases .contener .card{
+.Cases .linha .card{
     background: #fff;
     width: 300px;
     margin: 10px;
