@@ -929,9 +929,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 600;
 }
 .sobre a:hover {
-  text-decoration: none; 
-  color: #2dc997;
-  }
+	text-decoration: none; 
+	color: #2dc997;
+	}
 .sobre .bloco{
     padding-left: 60px;
     padding-right: 60px;
@@ -1539,9 +1539,9 @@ margin-top: 50px;
     font-weight: 600;
 }
 .Agenda a:hover {
-  text-decoration: none; 
-  color: #2dc997;
-  }
+	text-decoration: none; 
+	color: #2dc997;
+	}
 
 .Agenda .agenda-title{
     align-items: center;
@@ -2024,16 +2024,6 @@ margin-top: 50px;
     color: #000;
 }
 /*Area de noticia*/
-.Cases .contener .card a{
-    font-style: none;
-    color:  rgba(0, 0, 0, 0.808);
-    text-decoration: none;  
-}
-.Cases .contener .card a:hover {
-    text-decoration: none; 
-    color: #070707;
-    
-}
 .Cases{
     background-color: #fff;
 }
@@ -2047,18 +2037,18 @@ margin-top: 50px;
     top: 40px;
     margin-left: 40px;
 }
-.Cases .contener{
+.Cases .linha{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    flex-direction:row;
+    flex-direction:  row;
     margin-top: 0px;
 }
-.Cases .contener .card{
+.Cases .linha .card{
     background: #fff;
     width: 300px;
     margin: 10px;
-    padding: 20px;
+    padding: 25px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -2067,37 +2057,35 @@ margin-top: 50px;
 
 }
 /*IMG DE FUNDO DOS CARDS*/
-.Cases .contener .card .imagem-evento{
-    overflow: hidden;
-    margin-top:auto;
-    padding: auto;
-}
-.Cases .contener .card .imagem-evento img{
-    padding: 10px;
-    border-radius: 20px;
+.Cases .linha .card .imagem-evento img{
+    padding: 1px;
+    border-radius: 10px;
     align-items: center;
     width: 280px;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition:all 0.3s;
 }
-.Cases .linha .card .info{
-    padding-top: 10px;
-    
-}
-.Cases .contener .card .info h3{
-    font-size: 1.8em;
+
+
+.Cases .linha .card .imagem-evento h3{
+    color: black;
+    font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
+
 }
-.Cases .contener .card .info p{
-    font-size: 1em;
-    font-weight: 700;
-    margin: 10px;
+
+.Cases .linha .card .imagem-evento{
+    overflow: hidden;
 }
-.Cases .contener .card .imagem-evento:hover img{
+.Cases .linha .card .imagem-evento img{
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition:all 0.3s;
+}
+.Cases .linha .card .imagem-evento:hover img{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
 }
-
+.case .linha .card a{
+    text-decoration: none;
+}
