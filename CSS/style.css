@@ -2026,7 +2026,7 @@ margin-top: 50px;
 /*Area de noticia*/
 .Cases .contener .card a{
     font-style: none;
-    color:  rgba(0, 0, 0, 0.808);
+    color: rgba(0, 0, 0, 0.808);
     text-decoration: none;  
 }
 .Cases .contener .card a:hover {
