@@ -162,6 +162,7 @@ h1, h2, h3, h4, h6{
         left: 200px;
     }
 
+
     #sobre h1.portugues {
         position: absolute;
         left: 160px;
@@ -169,6 +170,42 @@ h1, h2, h3, h4, h6{
         font-size: 3.5em;
         text-align: center;
     }
+
+    #sobre p {
+        margin-top: 180px;
+    } 
+    
+    #eq-epic {
+        position: absolute;
+
+    }
+    #sobre h1.portugues {
+        position: absolute;
+        left: 160px;
+        color: black;
+        font-size: 3.5em;
+
+        text-align: center;
+        font-size: 1.9em;
+        left: 155px;
+        top: 240px;
+    }
+    
+    #eq-team {
+        position: absolute;
+        left: 180px;
+        top: 260px;
+        color: rgba(0, 0, 0, 0.2);
+        font-size: 2em;
+    }
+    .owl-carousel {
+        top: 80px;
+    }
+
+    #botao_anterior, #botao_proximo {
+        display: none;
+    }
+
 
     #sobre p {
         margin-top: 180px;
@@ -197,7 +234,6 @@ h1, h2, h3, h4, h6{
     #botao_anterior, #botao_proximo {
         display: none;
     }
-
     /*contato */
     #contato {
         background:#1d2840;;
@@ -818,6 +854,46 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*CAPA----- ajustes moobile*/
 @media (max-width: 360px) {
 
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 900px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 40px;
+        z-index: 10;
+        position: absolute;
+        width: 300px;
+    }
+}
+@media (min-width: 361px)and (max-width:450.9px) {
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 800px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 50px;
+        margin-left: 50px;
+        z-index: 10;
+        position: absolute;
+        width: 300px;
+    }
+}
+@media (min-width: 451px)and (max-width:549.9px){
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 900px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 45px;
+        margin-left: 45px;
+        z-index: 10;
+        position: absolute;
+        width: 350px;
+    }
+
     .home .inicio .cont-inicio .imgfundo{
         width: 900px;
     }
@@ -857,6 +933,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         width: 350px;
     }
 }
+
 
 
 
@@ -929,9 +1006,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 600;
 }
 .sobre a:hover {
-  text-decoration: none; 
-  color: #2dc997;
-  }
+	text-decoration: none; 
+	color: #2dc997;
+	}
 .sobre .bloco{
     padding-left: 60px;
     padding-right: 60px;
@@ -1539,9 +1616,9 @@ margin-top: 50px;
     font-weight: 600;
 }
 .Agenda a:hover {
-  text-decoration: none; 
-  color: #2dc997;
-  }
+	text-decoration: none; 
+	color: #2dc997;
+	}
 
 .Agenda .agenda-title{
     align-items: center;
@@ -1672,6 +1749,7 @@ margin-top: 50px;
     height: 100%;
     display: none;
     overflow: hidden;
+
 }
 .depiomento .depo_myslider .transparente{
    background: #0000008a;
@@ -1690,6 +1768,26 @@ margin-top: 50px;
   z-index: 10;
   color: #fff;
 }
+
+
+.depiomento .depo_myslider .transparente{
+   background: #0000008a;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+
+.depo_tex{
+  position: absolute;
+  padding: 20px;
+  z-index: 10;
+  color: #fff;
+}
+
 .depo_tex p{
    font-size: 20px;
    text-align: center;
@@ -1775,7 +1873,7 @@ margin-top: 50px;
 }
 /*Apoio------------------------*/
 .Apoio{
-    background-color: #1d2840;
+    background-color: #fff;
 }
 
 .Apoio .titolo h1{
@@ -1784,7 +1882,7 @@ margin-top: 50px;
     font-weight: 800;
     margin-bottom: 10px;
     text-align: left;
-    color:#fff;
+    color:#466fa6;
     top: 10px;
     margin-left: 40px;
 }
@@ -2035,7 +2133,7 @@ margin-top: 50px;
     
 }
 .Cases{
-    background-color: #fff;
+    background-color: #1d2840;
 }
 .Cases .titlo h1{
     position: relative;
@@ -2043,7 +2141,7 @@ margin-top: 50px;
     font-weight: 800;
     margin-bottom: 50px;
     text-align: left;
-    color:#466fa6;
+    color:#fff;
     top: 40px;
     margin-left: 40px;
 }
@@ -2100,4 +2198,3 @@ margin-top: 50px;
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
 }
-
