@@ -853,6 +853,21 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 10px;
 }
 
+.img-vidio-capa  .img-medias{
+    position: relative;
+    display: flex;
+    width: 40%;
+  
+}
+.img-vidio-capa  .img-medias img{
+    top: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
 
 @media(max-width: 300px) {
     .CAPA{
