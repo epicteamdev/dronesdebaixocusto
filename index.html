@@ -45,6 +45,9 @@
     <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/venobox/venobox.css" rel="stylesheet">
     <link href="vendor/aos/aos.css" rel="stylesheet">
+     <!--magnific-popup css cdn link-->
+
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -403,40 +406,54 @@
         <div class="contentt">
             <div class="card">
                 <div class="card-img">
-                    <img src="img\IMG-Galeria\multi-ethnic-group-of-young-people-studying-together-on-white-de.jpg" alt="">
+                    <a href="img\IMG-Galeria\multi-ethnic-group-of-young-people-studying-together-on-white-de.jpg" class="image">
+                        <img src="img\IMG-Galeria\multi-ethnic-group-of-young-people-studying-together-on-white-de.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="img\IMG-Galeria\free-time-of-a-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking.jpg" alt="">
+                    <a href="img\IMG-Galeria\free-time-of-a-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking.jpg" class="image">
+                        <img src="img\IMG-Galeria\free-time-of-a-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="img\IMG-Galeria\colleagues-giving-a-fist-bump.jpg" alt="">
+                        <a href="img\IMG-Galeria\colleagues-giving-a-fist-bump.jpg" class="image">
+                        <img src="img\IMG-Galeria\colleagues-giving-a-fist-bump.jpg" alt="">
+                    </a>
                 </div>
-            </div>
-        </div>    
+            </div> 
+        </div>   
         <div class="contentt">    
             <div class="card">
                 <div class="card-img">
-                    <img src="img\IMG-Galeria\21034641.jpg" alt="">
+                    <a href="img\IMG-Galeria\21034641.jpg" class="image">
+                        <img src="img\IMG-Galeria\21034641.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="img\IMG-Galeria\4168780.jpg" alt="">
+                    <a href="img\IMG-Galeria\4168780.jpg" class="image">
+                        <img src="img\IMG-Galeria\4168780.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-img">
-                    <img src="img\IMG-Galeria\21034641.jpg" alt="">
+                <div class="vidio">
+                    <iframe src="https://www.youtube.com/embed/8exspV0Dg7Q" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>  
         </div>
+
         <div class="title">
-            <a href="#" class="btn">veja mais</a>
+            <a href="galeria.html" class="btn">veja mais</a>
         </div>
+
     </section>
             <!-- CASES section -->
 
@@ -474,6 +491,17 @@
                                 </div>
                                 <div class="info">
                                     <h3>Aula 2</h3>
+                                    <p> MODULO I: Introdução à Modelagem 3D com Blende</p>
+                                </div>
+                            </a>        
+                        </div>  
+                        <div class="card">
+                            <a href="artigoaula3.html">
+                                <div class="imagem-evento">
+                                    <img src="img\dimesionar-320x144.png">
+                                </div>
+                                <div class="info">
+                                    <h3>Pré-Aula 3</h3>
                                     <p> MODULO I: Introdução à Modelagem 3D com Blende</p>
                                 </div>
                             </a>        
@@ -565,8 +593,10 @@
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/venobox/venobox.min.js"></script>
     <script src="vendor/aos/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="./JS/main.js"></script>
     <script src="./JS/depoimentos.js"></script>
+    <script src="JS\config.js"></script>
 
     
     </body>
