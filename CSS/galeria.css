@@ -12,19 +12,18 @@
 }
 .galeria .titolo h1{
     position: relative;
-    font-size: 2.2em;
+    font-size: 2.8em;
     font-weight: 800;
     margin-bottom: 50px;
     text-align: left;
     color:#466fa6;
     top: 40px;
-    margin-left: 40px;
+    margin-left: 200px;
 }
 
 .galeria .container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 20px;
 }
@@ -130,7 +129,8 @@
    text-align: left;
    color:#fff;
    top: 40px;
-   margin-left: 40px;
+   margin-left: 200px;
+
 }
 
 .videos .container{
