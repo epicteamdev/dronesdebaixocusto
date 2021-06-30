@@ -869,6 +869,31 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 10px;
 }
 
+/*Configurando area de autores*/
+.img-vidio-capa .autor{
+    padding-top: 40px;
+    display: flex;
+    padding-bottom: 20px;
+    
+}
+.img-vidio-capa .autor .contener{
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+.autor .contener .fotoEsquerda .IMG{
+    width: 60PX;
+    position: relative;
+
+}
+
+.img-vidio-capa .autor .contener .infoDireita h1{
+        font-size: 1.2em;
+        margin: 0%;
+}
+.img-vidio-capa .autor .contener .infoDireita h3{
+    font-size: 1.3em;
+}
 @media(max-width: 300px) {
     .CAPA{
         padding-top:20%;
@@ -927,7 +952,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .texto h3{
         font-size: 1.2em;
     }
-
+    .img-vidio-capa .autor{
+        padding-top: 2px;
+        display: inline;
+        padding-bottom: 5px;
+    }
 }
 @media (min-width: 300.1px)and (max-width:360px) {
         .CAPA{
@@ -985,7 +1014,11 @@ body.mobile-nav-active #mobile-nav-toggle {
         .img-vidio-capa .texto h3{
             font-size: 1.3em;
         }
-    
+        .img-vidio-capa .autor{
+            padding-top: 2px;
+            display: inline;
+            padding-bottom: 5px;
+        }
     
  
 }
@@ -1040,6 +1073,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .texto h3{
         font-size: 1.3em;
     }
+    .img-vidio-capa .autor{
+        padding-top: 2px;
+        display: inline;
+        padding-bottom: 5px;
+    }
 
 }
 @media (min-width: 400.1px)and (max-width:500.9px){
@@ -1089,6 +1127,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
     .img-vidio-capa .texto h2{
         font-size: 2em;
+    }
+    .img-vidio-capa .autor{
+        padding-top: 2px;
+        display: inline;
+        padding-bottom: 5px;
     }
 
 }
@@ -1141,6 +1184,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .texto h2{
         font-size: 2em;
     }
+    .img-vidio-capa .autor{
+        padding-top: 20px;
+        display: inline;
+        padding-bottom: 5px;
+        align-content: center;
+    }
 
 }
 @media (min-width: 600.1px) and (max-width: 700.98px){
@@ -1191,6 +1240,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .texto h2{
         font-size: 2em;
     }
+    .img-vidio-capa .autor{
+        padding-top: 2px;
+        display: inline;
+        padding-bottom: 5px;
+    }
 }
 @media (min-width: 700.1px) and (max-width: 991.98px){
     .CAPA{
@@ -1239,6 +1293,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
     .img-vidio-capa .texto h2{
         font-size: 2em;
+    }
+    .img-vidio-capa .autor{
+        padding-top: 20px;
+        padding-bottom: 15px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {

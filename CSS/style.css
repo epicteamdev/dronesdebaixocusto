@@ -855,6 +855,47 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 360px) {
 
 
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 900px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 40px;
+        z-index: 10;
+        position: absolute;
+        width: 300px;
+    }
+}
+@media (min-width: 361px)and (max-width:450.9px) {
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 800px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 50px;
+        margin-left: 50px;
+        z-index: 10;
+        position: absolute;
+        width: 300px;
+    }
+}
+@media (min-width: 451px)and (max-width:549.9px){
+
+    .home .inicio .cont-inicio .imgfundo{
+        width: 900px;
+    }
+    .home .inicio .cont-inicio .logo img{
+        top:18px;
+        padding-left: 45px;
+        margin-left: 45px;
+        z-index: 10;
+        position: absolute;
+        width: 350px;
+    }
+
+
     .home .inicio .cont-inicio .imgfundo{
         width: 900px;
     }
@@ -933,6 +974,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         width: 350px;
     }
 }
+
 
 
 
@@ -2071,6 +2113,24 @@ margin-top: 50px;
     border-radius:10px;
  
 }
+.galeria .contentt .card .vidio{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius:10px;
+    
+}
+.galeria .contentt .card .vidio iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
 .galeria .contentt .card .card-img img{
     position: absolute;
     top: 0;
@@ -2164,6 +2224,9 @@ margin-top: 50px;
     border-radius:10px;
 
 }
+
+
+
 /*IMG DE FUNDO DOS CARDS*/
 .Cases .contener .card .imagem-evento{
     overflow: hidden;
