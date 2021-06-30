@@ -855,47 +855,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 360px) {
 
 
-
-    .home .inicio .cont-inicio .imgfundo{
-        width: 900px;
-    }
-    .home .inicio .cont-inicio .logo img{
-        top:18px;
-        padding-left: 40px;
-        z-index: 10;
-        position: absolute;
-        width: 300px;
-    }
-}
-@media (min-width: 361px)and (max-width:450.9px) {
-
-    .home .inicio .cont-inicio .imgfundo{
-        width: 800px;
-    }
-    .home .inicio .cont-inicio .logo img{
-        top:18px;
-        padding-left: 50px;
-        margin-left: 50px;
-        z-index: 10;
-        position: absolute;
-        width: 300px;
-    }
-}
-@media (min-width: 451px)and (max-width:549.9px){
-
-    .home .inicio .cont-inicio .imgfundo{
-        width: 900px;
-    }
-    .home .inicio .cont-inicio .logo img{
-        top:18px;
-        padding-left: 45px;
-        margin-left: 45px;
-        z-index: 10;
-        position: absolute;
-        width: 350px;
-    }
-
-
     .home .inicio .cont-inicio .imgfundo{
         width: 900px;
     }
@@ -974,7 +933,6 @@ body.mobile-nav-active #mobile-nav-toggle {
         width: 350px;
     }
 }
-
 
 
 
@@ -1915,7 +1873,7 @@ margin-top: 50px;
 }
 /*Apoio------------------------*/
 .Apoio{
-    background-color: #fff;
+    background-color: #1d2840;
 }
 
 .Apoio .titolo h1{
@@ -1924,7 +1882,7 @@ margin-top: 50px;
     font-weight: 800;
     margin-bottom: 10px;
     text-align: left;
-    color:#466fa6;
+    color:#fff;
     top: 10px;
     margin-left: 40px;
 }
@@ -2193,7 +2151,7 @@ margin-top: 50px;
     
 }
 .Cases{
-    background-color: #1d2840;
+    background-color: #fff;
 }
 .Cases .titlo h1{
     position: relative;
@@ -2201,7 +2159,7 @@ margin-top: 50px;
     font-weight: 800;
     margin-bottom: 50px;
     text-align: left;
-    color:#fff;
+    color:#466fa6;
     top: 40px;
     margin-left: 40px;
 }
