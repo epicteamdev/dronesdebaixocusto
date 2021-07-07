@@ -1933,7 +1933,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /*Apoio------------------------*/
 .Apoio{
-    background-color: #1d2840;
+    background-color: #fff;
 }
 
 .Apoio .titolo h1{
@@ -1942,7 +1942,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 800;
     margin-bottom: 10px;
     text-align: left;
-    color:#fff;
+    color:#466fa6;;
     top: 10px;
     margin-left: 40px;
 }
@@ -2298,4 +2298,58 @@ body.mobile-nav-active #mobile-nav-toggle {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
+}
+/*RANKING*/
+.rank{
+    background-color:#1d2840;
+    align-items: center;
+    padding: 60px;
+}
+.rank .titulo {
+    
+    padding-left: 36%;
+    padding-bottom: 20px;
+}
+.rank .titulo h1{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    
+}
+.rank .container{
+   max-width: 900px;
+   border:5px solid #2dc997;
+   background-color:#fff;
+   padding: 15px;
+   overflow: auto;
+   margin: auto;
+   border-radius: 8px;
+}
+table{
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+table>thead{
+    background-color: #2dc997;
+    color: #1d2840;
+    border-radius: 10%;
+}
+table>thead th{
+    padding: 15px;
+}
+table th,
+table td{
+    border: 1px  solid #fff;
+    padding: 15px 20px;
+}
+table>tbody>tr>td>img{
+    display: inline-block;
+    width: 100px;
+    /*height: ;*/
+    border-radius: 10%;
+    border: 1px solid #2dc997;
+    box-shadow: 0 2px 6px #0003;
 }
