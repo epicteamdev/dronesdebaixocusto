@@ -1162,6 +1162,15 @@ body.mobile-nav-active #mobile-nav-toggle {
     object-fit: cover;
     border-radius: 20px;
 }
+.sobre .content .col-left .img-card iframe{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+}
 .sobre .content .col-right p{
     font-size: 1em;
     color: black;
@@ -1216,7 +1225,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .sobre  .bloco .content .col-right p{
         font-size: 0.8em;
     } 
-  
+    .sobre .content .col-left .img-card iframe{
+      
+        height: 200px;
+    
+    }
 }
 @media(min-width: 350px) and (max-width: 549.99px){
     .sobre .bloco {
@@ -1244,7 +1257,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .sobre  .bloco .content .col-right p{
         font-size: 0.8em;
     } 
-   
+    .sobre .content .col-left .img-card iframe{
+      
+        height: 300px;
+    
+    }
 }
 @media (min-width: 550px) and (max-width: 550.99px) {
     .sobre .bloco {
@@ -1262,6 +1279,11 @@ body.mobile-nav-active #mobile-nav-toggle {
         flex-direction: column;
         position: relative;
         width: 100%;
+    }
+    .sobre .content .col-left .img-card iframe{
+      
+        height: 300px;
+    
     }
    
 } 
@@ -1301,7 +1323,11 @@ body.mobile-nav-active #mobile-nav-toggle {
         width: 100%;
         max-height: 350px;
     }
-   
+    .sobre .content .col-left .img-card iframe{
+      
+        height:400px;
+    
+    }
   } 
 
 @media (min-width: 992px) and (max-width: 1200.98px) {
@@ -1331,6 +1357,11 @@ body.mobile-nav-active #mobile-nav-toggle {
         width: 100%;
         max-height: 350px;
     }
+    .sobre .content .col-left .img-card iframe{
+      
+        height: 400px;
+    
+    }
 } 
 
 
@@ -1341,7 +1372,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .sobre  .bloco .content .col-right p{
         font-size: 0.8em;
     } 
-  
+    .sobre .content .col-left .img-card iframe{
+      
+        height: 400px;
+    
+    }
     
 }
 @media (min-width: 1400px) and (max-width: 1500.98px) {
@@ -1351,7 +1386,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     .sobre  .bloco .content .col-right p{
         font-size: 0.8em;
     } 
+    .sobre .content .col-left .img-card iframe{
+      
+        height: 400px;
     
+    }
 }
 @media (min-width: 1500.99px) and (max-width: 1900.98px) {
         .sobre  .bloco .content .col-right .content-title{
@@ -1933,7 +1972,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /*Apoio------------------------*/
 .Apoio{
-    background-color: #1d2840;
+    background-color: #fff;
 }
 
 .Apoio .titolo h1{
@@ -1942,7 +1981,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 800;
     margin-bottom: 10px;
     text-align: left;
-    color:#fff;
+    color:#466fa6;;
     top: 10px;
     margin-left: 40px;
 }
@@ -2116,20 +2155,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .galeria .contentt .card{
-    width: 340px;
-    margin: 15px;
+    width: 400px;
+    margin: 10px;
 }
 .galeria .contentt .card .card-img{
     position: relative;
     width: 100%;
     height: 260px;
     overflow: hidden;
-    border-radius:10px;
- 
+    border-radius:2px;
+    border: 2px solid #fff;
 }
 .galeria .contentt .card .vidio{
     position: relative;
@@ -2298,4 +2337,319 @@ body.mobile-nav-active #mobile-nav-toggle {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
+}
+/*RANKING*/
+.rank{
+    background-color:#1d2840;
+    align-items: center;
+    padding: 10px;
+}
+.rank .titulo {
+   padding: 60px;
+    
+}
+.rank .titulo h1{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 35%;
+    
+}
+.rank .container{
+   position: relative;
+   max-width: 1000px;
+   border:5px solid #235697;
+   background-color:#fff;
+   padding: 15px;
+   overflow: auto;
+   margin: auto;
+   border-radius: 20px;
+   display: flex;
+}
+.rank .container table{
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+.rank .container table>thead{
+    background-color: #4a86bc;
+    color: #fff;
+    border-radius: 50%;
+}
+.rank .container table>thead th{
+    padding: 15px;
+}
+.rank .container table th,
+table td{
+    border: 1px  solid #fff;
+    padding: 5px 30px;
+    padding-top: 15px;
+    
+}
+.rank .container table td p{
+    color: #466fa6;
+    font-size: 1.4em;
+    font-weight: 800;
+    display: inline-block;
+}
+.rank .container table td h3{
+    color:#466fa6;
+    font-size: 1.4em;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 10px;
+}
+.rank .container table>tbody>tr>td>img{
+    display: inline-block;
+    width: 150px;
+    height: 90px ;
+    border-radius: 10%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px #0003;
+}
+@media(max-width: 270px){
+    .rank .titulo {
+        padding: 10px;
+         
+     }
+     .rank .titulo h1{
+         color: #ffffff;
+         font-size: 1.7em;
+         font-weight: 700;
+         margin-left: 5%;
+         
+     }
+     .rank .container{
+        max-width: 500px;
+         padding: 5px;
+         
+      }
+      .rank .container table{
+          width: 10%;
+          font-size: 12px;
+         
+      }
+      .rank .container table>thead{
+ 
+          border-radius: 50%;
+      }
+      .rank .container table>thead th{
+          padding: 1px;
+      }
+      .rank .container table th,
+      table td{
+          border: 1px  solid #fff;
+          padding: 5px 3px;
+          padding-top: 5px;
+          
+      }
+      .rank .container table>tbody>tr>td>img{
+          
+          width: 50px;
+          height: 50px;
+          
+      }
+}
+@media (min-width: 270px) and (max-width: 500px){
+    .rank .titulo {
+        padding: 10px;
+         
+     }
+     .rank .titulo h1{
+         color: #ffffff;
+         font-size: 1.7em;
+         font-weight: 700;
+         margin-left: 5%;
+         
+     }
+     
+}
+@media(min-width:270px) and (max-width:350px){
+    .rank .container{
+        max-width: 500px;
+         padding: 10px;
+         
+      }
+      .rank .container table{
+          width: 10%;
+          font-size: 12px;
+         
+      }
+      .rank .container table>thead{
+ 
+          border-radius: 50%;
+      }
+      .rank .container table>thead th{
+          padding: 1px;
+      }
+      .rank .container table th,
+      table td{
+          border: 1px  solid #fff;
+          padding: 10px 10px;
+          padding-top: 5px;
+          
+      }
+      .rank .container table>tbody>tr>td>img{
+          
+          width: 50px;
+          height: 50px;
+          
+      }
+
+}
+@media(min-width:350px) and (max-width:400px){
+    .rank .container{
+        max-width: 500px;
+         padding: 10px;
+         
+      }
+      .rank .container table{
+          width: 20%;
+          font-size: 15px;
+         
+      }
+      .rank .container table>thead{
+ 
+          border-radius: 50%;
+      }
+      .rank .container table>thead th{
+          padding: 5px;
+      }
+      .rank .container table th,
+      table td{
+          border: 1px  solid #fff;
+          padding: 5px 6px;
+          padding-top: 5px;
+          
+      }
+      .rank .container table>tbody>tr>td>img{
+          
+          width: 50px;
+          height: 50px;
+          
+      }
+
+}
+
+@media(min-width:400px) and (max-width:500px){
+    .rank .container{
+        max-width: 400px;
+         padding: 10px;
+         
+      }
+      .rank .container table{
+          width: 10%;
+          font-size: 15px;
+         
+      }
+      .rank .container table>thead{
+ 
+          border-radius: 50%;
+      }
+      .rank .container table>thead th{
+          padding: 10px;
+      }
+      .rank .container table th,
+      table td{
+          border: 1px  solid #fff;
+          padding: 10px 6px;
+          padding-top: 5px;
+          
+      }
+      .rank .container table>tbody>tr>td>img{
+          
+          width: 50px;
+          height: 50px;
+          
+      }
+
+}
+
+@media(min-width:500px) and (max-width:700px){
+    .rank .container{
+        max-width: 500px;
+         padding: 10px;
+         
+      }
+      .rank .container table{
+          width: 100%;
+          font-size: 15px;
+         
+      }
+      .rank .container table>thead{
+ 
+          border-radius: 50%;
+      }
+      .rank .container table>thead th{
+          padding: 10px;
+      }
+      .rank .container table th,
+      table td{
+          border: 1px  solid #fff;
+          padding: 20px 20px;
+          padding-top: 5px;
+          
+      }
+      .rank .container table>tbody>tr>td>img{
+          
+          width: 80px;
+          height: 70px;
+          
+      }
+
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+    .rank .titulo {
+        padding: auto;
+         
+     }
+     .rank .titulo h1{
+         color: #ffffff;
+         font-size: 2em;
+         font-weight: 700;
+         margin-left: 20%;
+         
+     }
+}
+@media (min-width: 700px) and (max-width: 900px){
+    .rank .titulo {
+        padding: auto;
+         
+     }
+     .rank .titulo h1{
+         color: #ffffff;
+         font-size: 2em;
+         font-weight: 700;
+         margin-left: 20%;
+         
+     }
+}
+@media (min-width: 900px) and (max-width: 1000px){
+    .rank .titulo {
+        padding: auto;
+         
+     }
+     .rank .titulo h1{
+         color: #ffffff;
+         font-size: 2em;
+         font-weight: 700;
+         margin-left: 20%;
+         
+     }
+}
+@media (min-width: 1000px) and (max-width: 2000px){
+    .rank .titulo {
+        padding: auto;
+         
+     }
+     .rank .titulo h1{
+         color: #ffffff;
+         font-size: 2em;
+         font-weight: 700;
+         margin-left: 36%;
+         
+     }
 }
