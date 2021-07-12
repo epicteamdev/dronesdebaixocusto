@@ -1742,7 +1742,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     align-items: center;
     justify-content: center;
     color: #fff;
-    padding: 8px 32px;
+    padding: 8px 25px;
     font-weight: bold;
     text-align: center;
     border-radius: 8px 0 0 8px;
@@ -1764,8 +1764,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     justify-content: center;
     padding: 0 24px;
     background-color: #fff;
-    width: 700px;
-    margin-right: 20px;
+    width: 800px;
+    margin-right: 15px;
   }
   
   .Agenda .event-container .eventos .evento-right .evento-title{
@@ -1808,7 +1808,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: 40px;
   }
 
-@media (max-width: 550px){
+@media (max-width: 650px){
     .Agenda .agenda-title h3{
         font-size: 1.8em;
     }
@@ -1819,6 +1819,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         padding: 0;
         border-radius: 8px 8px 0 0;
     }
+   
     .eventos .evento-left .eveto-data .data,
     .eventos .evento-left .eveto-data .Mes{
         display: inline-block;
@@ -1829,6 +1830,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
     .Agenda .eventos .evento-right {
      width: auto;
+     margin-right: 1px;
+     
     }
 
 }
@@ -2401,7 +2404,7 @@ table td{
     display: inline-block;
     margin-left: 10px;
 }
-.rank .container table>tbody>tr>td>img{
+.rank .container  .bandeira img{
     display: inline-block;
     width: 150px;
     height: 90px ;
@@ -2498,12 +2501,29 @@ table td{
           padding-top: 5px;
           
       }
-      .rank .container table>tbody>tr>td>img{
+      .rank .container  .bandeira img{
           
           width: 50px;
           height: 50px;
           
       }
+      .rank .container .coin img{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-bottom: 14px;
+    }
+    .rank .container table td p{
+       
+        font-size: 1.2em;
+      
+    }
+    .rank .container table td h3{
+        
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
 
 }
 @media(min-width:350px) and (max-width:400px){
@@ -2531,12 +2551,29 @@ table td{
           padding-top: 5px;
           
       }
-      .rank .container table>tbody>tr>td>img{
+      .rank .container  .bandeira img{
           
           width: 50px;
           height: 50px;
           
       }
+      .rank .container .coin img{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-bottom: 14px;
+    }
+    .rank .container table td p{
+       
+        font-size: 1.3em;
+      
+    }
+    .rank .container table td h3{
+        
+        font-size: 1.3em;
+        margin-left: 5px;
+    }
 
 }
 
@@ -2565,7 +2602,7 @@ table td{
           padding-top: 5px;
           
       }
-      .rank .container table>tbody>tr>td>img{
+        .rank .container  .bandeira img{
           
           width: 50px;
           height: 50px;
@@ -2599,7 +2636,7 @@ table td{
           padding-top: 5px;
           
       }
-      .rank .container table>tbody>tr>td>img{
+      .rank .container  .bandeira img{
           
           width: 80px;
           height: 70px;
