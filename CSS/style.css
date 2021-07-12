@@ -2027,10 +2027,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 100px;
     margin-top: 12%;
 }
-.Apoio .contener .apoio1 .colEsquesrda1 .img5{
-    
-    margin-top: 12%;
-}
+
 
 @media (max-width: 550px){
 
@@ -2050,6 +2047,14 @@ body.mobile-nav-active #mobile-nav-toggle {
             width: 100px;
 
         }
+            
+    .Apoio .contener .apoio1{
+        justify-content:center;
+        margin-right: auto;
+        margin-top: auto;
+        margin-left: auto;
+        padding-bottom: auto;
+    }
 }
 
 
