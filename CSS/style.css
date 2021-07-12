@@ -1737,12 +1737,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   
   .Agenda .eventos .evento-left {
     background: #222;
-    min-width: 82px;
+    min-width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    padding: 8px 48px;
+    padding: 8px 32px;
     font-weight: bold;
     text-align: center;
     border-radius: 8px 0 0 8px;
@@ -1765,7 +1765,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0 24px;
     background-color: #fff;
     width: 700px;
-
+    margin-right: 20px;
   }
   
   .Agenda .event-container .eventos .evento-right .evento-title{
@@ -1786,7 +1786,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 135px;
     padding: 8px;
     border-radius: 16px;
     margin: 24px 0;
@@ -2408,6 +2408,13 @@ table td{
     border-radius: 10%;
     border: 2px solid #fff;
     box-shadow: 0 2px 6px #0003;
+}
+.rank .container .coin img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 14px;
 }
 @media(max-width: 270px){
     .rank .titulo {
