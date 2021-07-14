@@ -888,7 +888,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*CAPA----- ajustes moobile*/
 @media(max-width: 330px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 700px;
+                width: 400px;
+                height: 260PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -900,11 +901,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     .home .inicio .cont-inicio .logo img{
             width: 300px;
         
-        }
+    }
+   
 }
 @media(min-width: 330px) and (max-width: 340px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 700px;
+        width: 400px;
+        height: 260PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -920,7 +923,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media(min-width: 340px) and (max-width: 350px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 700px;
+        width: 450px;
+        height: 300PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -936,7 +940,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media(min-width: 350px) and (max-width: 360px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 600px;
+            width: 450px;
+            height: 300PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -951,9 +956,10 @@ body.mobile-nav-active #mobile-nav-toggle {
         
         }
 }
-@media(min-width: 361px) and (max-width: 430px){
+@media(min-width: 36.1px) and (max-width: 430px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 700px;
+            width: 450px;
+            height: 300PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -968,9 +974,10 @@ body.mobile-nav-active #mobile-nav-toggle {
         
         }
 }
-@media(min-width: 430px) and (max-width: 460px){
+@media(min-width: 430.1px) and (max-width: 460px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 700px;
+        width: 500px;
+        height: 300PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -984,9 +991,10 @@ body.mobile-nav-active #mobile-nav-toggle {
         
         }
 }
-@media(min-width: 460px) and (max-width: 550px){
+@media(min-width: 460.1px) and (max-width: 550px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 1000px;
+        width: 500px;
+        height: 350PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -1000,9 +1008,10 @@ body.mobile-nav-active #mobile-nav-toggle {
         
         }
 }
-@media(min-width: 550px) and (max-width: 600px){
+@media(min-width: 550.1px) and (max-width: 600px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 1000px;
+        width: 600px;
+        height: 450PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -1018,7 +1027,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media(min-width: 600px) and (max-width: 700px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 1000px;
+        width: 700px;
+        height: 450PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -1034,7 +1044,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media(min-width: 700px) and (max-width: 900px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 1200px;
+            width: 900px;
+            height: 500PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -1051,7 +1062,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media(min-width: 900px) and (max-width: 1100px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 1500px;
+        width: 1100px;
+        height: 600PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -1068,7 +1080,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media(min-width: 1100px) and (max-width: 1800px){
     .home .inicio .cont-inicio .imgfundo{
-                width: 1700px;
+        width: 1600px;
+        height: 800PX;
     }
     .home .inicio .cont-inicio .logo{
             position: absolute;
@@ -1712,11 +1725,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
 }
 .Agenda a:hover {
 	text-decoration: none; 
-	color: #2dc997;
+	color: #fff;
 	}
 
 .Agenda .agenda-title{
@@ -1769,11 +1782,34 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   
   .Agenda .event-container .eventos .evento-right .evento-title{
-    font-size: 24px;
+    font-size: 20px;
     margin: 24px 0 10px 0;
-    color: #000000;
+    color: #070707;
     text-transform: uppercase;
+    background-color: #b1311aab;
+    border-radius: 5%;
+    border: 2px solid #1d2840;
   }
+  .Agenda .event-container .eventos .evento-right .evento-title2{
+    font-size: 20px;
+    margin: 24px 0 10px 0;
+    color: #070707;
+    text-transform: uppercase;
+    background-color: #1243e4b2;
+    border-radius: 5%;
+    border: 2px solid #1d2840;
+  }
+  .Agenda .event-container .eventos .evento-right .evento-title3{
+    font-size: 20px;
+    margin: 24px 0 10px 0;
+    color: #070707;
+    text-transform: uppercase;
+    background-color: #1692b8ab;
+    border-radius: 5%;
+    border: 2px solid #1d2840;
+  }
+  
+  
   .Agenda .event-container .eventos .evento-right .evento-discricao{
     font-size: 15px;
     margin: 15px 0 8px 0;
@@ -2392,7 +2428,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .rank .container table th,
 table td{
     border: 1px  solid #fff;
-    padding: 5px 30px;
+    padding: 5px 50px;
     padding-top: 15px;
     
 }
@@ -2424,281 +2460,297 @@ table td{
     margin-left: 5px;
     margin-bottom: 14px;
 }
-@media(max-width: 270px){
+@media(max-width: 340px){
+    .rank{
+        padding: 1px;
+        padding-bottom: 10px;
+    }
     .rank .titulo {
-        padding: 10px;
-         
-     }
-     .rank .titulo h1{
-         color: #ffffff;
-         font-size: 1.7em;
-         font-weight: 700;
-         margin-left: 5%;
-         
-     }
-     .rank .container{
-        max-width: 500px;
-         padding: 5px;
-         
-      }
-      .rank .container table{
-          width: 10%;
-          font-size: 12px;
-         
-      }
-      .rank .container table>thead{
- 
-          border-radius: 50%;
-      }
-      .rank .container table>thead th{
-          padding: 1px;
-      }
-      .rank .container table th,
-      table td{
-          border: 1px  solid #fff;
-          padding: 5px 3px;
-          padding-top: 5px;
-          
-      }
-      .rank .container table>tbody>tr>td>img{
-          
-          width: 50px;
-          height: 50px;
-          
-      }
-}
-@media (min-width: 270px) and (max-width: 500px){
-    .rank .titulo {
-        padding: 10px;
-         
-     }
-     .rank .titulo h1{
-         color: #ffffff;
-         font-size: 1.7em;
-         font-weight: 700;
-         margin-left: 5%;
-         
-     }
-     
-}
-@media(min-width:270px) and (max-width:350px){
-    .rank .container{
-        max-width: 500px;
-         padding: 10px;
-         
-      }
-      .rank .container table{
-          width: 10%;
-          font-size: 12px;
-         
-      }
-      .rank .container table>thead{
- 
-          border-radius: 50%;
-      }
-      .rank .container table>thead th{
-          padding: 1px;
-      }
-      .rank .container table th,
-      table td{
-          border: 1px  solid #fff;
-          padding: 10px 10px;
-          padding-top: 5px;
-          
-      }
-      .rank .container  .bandeira img{
-          
-          width: 50px;
-          height: 50px;
-          
-      }
-      .rank .container .coin img{
+       padding: 8px;
+        
+    }
+    .rank .titulo h1{
+        font-size: 1.4em;
+        margin-left: 10%;
+        margin-top: 2%; 
+
+    }
+    .rank .container{/*parte do contetner*/
+       border:5px solid #235697;
+       background-color:#fff;
+       padding: 2px;
+       border-radius: 10px;
+    }
+    .rank .container table{
+        width: 100%;
+        font-size: 10px;
+    }
+    .rank .container table>thead{
+        background-color: #4a86bc;
+        color: #fff;
+        border-radius: 50%;
+    }
+    .rank .container table>thead th{/*parteazul*/
+        padding: 5px;
+    }
+    .rank .container table th,
+    table td{
+        border: 1px  solid #fff;
+        padding: 1px 5px;
+        padding-top: 5px;
+        
+    }
+    
+    .rank .container  .bandeira img{
+        display: inline-block;
+        width: 70px;
+        height: 70px ;
+        border-radius: 10%;
+        border: 2px solid #fff;
+        box-shadow: 0 2px 6px #0003;
+    }
+    .rank .container .coin img{
         display: inline-block;
         width: 20px;
         height: 20px;
-        margin-left: 5px;
-        margin-bottom: 14px;
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
-    .rank .container table td p{
-       
-        font-size: 1.2em;
-      
-    }
-    .rank .container table td h3{
-        
-        font-size: 1.2em;
-        margin-left: 5px;
-    }
-
+    
 }
-@media(min-width:350px) and (max-width:400px){
-    .rank .container{
-        max-width: 500px;
-         padding: 10px;
-         
-      }
-      .rank .container table{
-          width: 20%;
-          font-size: 15px;
-         
-      }
-      .rank .container table>thead{
- 
-          border-radius: 50%;
-      }
-      .rank .container table>thead th{
-          padding: 5px;
-      }
-      .rank .container table th,
-      table td{
-          border: 1px  solid #fff;
-          padding: 5px 6px;
-          padding-top: 5px;
-          
-      }
-      .rank .container  .bandeira img{
-          
-          width: 50px;
-          height: 50px;
-          
-      }
-      .rank .container .coin img{
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-left: 5px;
-        margin-bottom: 14px;
-    }
-    .rank .container table td p{
-       
-        font-size: 1.3em;
-      
-    }
-    .rank .container table td h3{
+@media (min-width: 340px) and (max-width: 400px){
+    
+        .rank{
+            padding: 1px;
+            padding-bottom: 10px;
+        }
+        .rank .titulo {
+           padding: 8px;
+            
+        }
+        .rank .titulo h1{
+            font-size: 1.4em;
+            margin-left: 10%;
+            margin-top: 2%; 
+    
+        }
+        .rank .container{/*parte do contetner*/
+           border:5px solid #235697;
+           background-color:#fff;
+           padding: 2px;
+           border-radius: 10px;
+        }
+        .rank .container table{
+            width: 100%;
+            font-size: 10px;
+        }
+        .rank .container table>thead{
+            background-color: #4a86bc;
+            color: #fff;
+            border-radius: 50%;
+        }
+        .rank .container table>thead th{/*parteazul*/
+            padding: 5px;
+        }
+        .rank .container table th,
+        table td{
+            border: 1px  solid #fff;
+            padding: 1px 10px;
+            padding-top: 5px;
+            
+        }
         
-        font-size: 1.3em;
-        margin-left: 5px;
-    }
-
-}
-
-@media(min-width:400px) and (max-width:500px){
-    .rank .container{
-        max-width: 400px;
-         padding: 10px;
-         
-      }
-      .rank .container table{
-          width: 10%;
-          font-size: 15px;
-         
-      }
-      .rank .container table>thead{
- 
-          border-radius: 50%;
-      }
-      .rank .container table>thead th{
-          padding: 10px;
-      }
-      .rank .container table th,
-      table td{
-          border: 1px  solid #fff;
-          padding: 10px 6px;
-          padding-top: 5px;
-          
-      }
         .rank .container  .bandeira img{
-          
-          width: 50px;
-          height: 50px;
-          
-      }
-
-}
-
-@media(min-width:500px) and (max-width:700px){
-    .rank .container{
-        max-width: 500px;
-         padding: 10px;
-         
-      }
-      .rank .container table{
-          width: 100%;
-          font-size: 15px;
-         
-      }
-      .rank .container table>thead{
+            display: inline-block;
+            width: 70px;
+            height: 70px ;
+            border-radius: 10%;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 6px #0003;
+        }
+        .rank .container .coin img{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-bottom: 14px;
+        }
+        
  
-          border-radius: 50%;
-      }
-      .rank .container table>thead th{
-          padding: 10px;
-      }
-      .rank .container table th,
-      table td{
-          border: 1px  solid #fff;
-          padding: 20px 20px;
-          padding-top: 5px;
-          
-      }
-      .rank .container  .bandeira img{
-          
-          width: 80px;
-          height: 70px;
-          
-      }
+}
+@media (min-width: 400.1px) and (max-width: 500px){
+    
+    .rank{
+        padding: 1px;
+        padding-bottom: 10px;
+    }
+    .rank .titulo {
+       padding: 8px;
+        
+    }
+    .rank .titulo h1{
+        font-size: 1.4em;
+        margin-left: 10%;
+        margin-top: 2%; 
+
+    }
+    .rank .container{/*parte do contetner*/
+       border:5px solid #235697;
+       background-color:#fff;
+       padding: 2px;
+       border-radius: 10px;
+    }
+    .rank .container table{
+        width: 100%;
+        font-size: 15px;
+    }
+    .rank .container table>thead{
+        background-color: #4a86bc;
+        color: #fff;
+        border-radius: 50%;
+    }
+    .rank .container table>thead th{/*parteazul*/
+        padding: 5px;
+    }
+    .rank .container table th,
+    table td{
+        border: 1px  solid #fff;
+        padding: 1px 10px;
+        padding-top: 5px;
+        
+    }
+    
+    .rank .container  .bandeira img{
+        display: inline-block;
+        width: 70px;
+        height: 70px ;
+        border-radius: 10%;
+        border: 2px solid #fff;
+        box-shadow: 0 2px 6px #0003;
+    }
+    .rank .container .coin img{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-bottom: 14px;
+    }
+    
 
 }
+@media (min-width: 500.1px) and (max-width: 600px){
+    
+    .rank{
+        padding: 1px;
+        padding-bottom: 10px;
+    }
+    .rank .titulo {
+       padding: 8px;
+        
+    }
+    .rank .titulo h1{
+        font-size: 1.8em;
+        margin-left: 10%;
+        margin-top: 2%; 
 
-@media (min-width: 500px) and (max-width: 700px){
-    .rank .titulo {
-        padding: auto;
-         
-     }
-     .rank .titulo h1{
-         color: #ffffff;
-         font-size: 2em;
-         font-weight: 700;
-         margin-left: 20%;
-         
-     }
+    }
+    .rank .container{/*parte do contetner*/
+       border:5px solid #235697;
+       background-color:#fff;
+       padding: 2px;
+       border-radius: 10px;
+    }
+    .rank .container table{
+        width: 100%;
+        font-size: 15px;
+    }
+    .rank .container table>thead{
+        background-color: #4a86bc;
+        color: #fff;
+        border-radius: 50%;
+    }
+    .rank .container table>thead th{/*parteazul*/
+        padding: 5px;
+    }
+    .rank .container table th,
+    table td{
+        border: 1px  solid #fff;
+        padding: 1px 20px;
+        padding-top: 5px;
+        
+    }
+    
+    .rank .container  .bandeira img{
+        display: inline-block;
+        width: 70px;
+        height: 70px ;
+        border-radius: 10%;
+        border: 2px solid #fff;
+        box-shadow: 0 2px 6px #0003;
+    }
+    .rank .container .coin img{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-bottom: 14px;
+    }
 }
-@media (min-width: 700px) and (max-width: 900px){
+@media (min-width: 600.1px) and (max-width: 800px){
+    
+    .rank{
+        padding: 1px;
+        padding-bottom: 10px;
+    }
     .rank .titulo {
-        padding: auto;
-         
-     }
-     .rank .titulo h1{
-         color: #ffffff;
-         font-size: 2em;
-         font-weight: 700;
-         margin-left: 20%;
-         
-     }
-}
-@media (min-width: 900px) and (max-width: 1000px){
-    .rank .titulo {
-        padding: auto;
-         
-     }
-     .rank .titulo h1{
-         color: #ffffff;
-         font-size: 2em;
-         font-weight: 700;
-         margin-left: 20%;
-         
-     }
-}
-@media (min-width: 1000px) and (max-width: 2000px){
-    .rank .titulo {
-        padding: auto;
-         
-     }
-     .rank .titulo h1{
-         color: #ffffff;
-         font-size: 2em;
-         font-weight: 700;
-         margin-left: 36%;
-         
-     }
+       padding: 8px;
+        
+    }
+    .rank .titulo h1{
+        font-size: 1.8em;
+        margin-left: 10%;
+        margin-top: 2%; 
+
+    }
+    .rank .container{/*parte do contetner*/
+       border:5px solid #235697;
+       background-color:#fff;
+       padding: 2px;
+       border-radius: 10px;
+    }
+    .rank .container table{
+        width: 100%;
+        font-size: 15px;
+    }
+    .rank .container table>thead{
+        background-color: #4a86bc;
+        color: #fff;
+        border-radius: 50%;
+    }
+    .rank .container table>thead th{/*parteazul*/
+        padding: 5px;
+    }
+    .rank .container table th,
+    table td{
+        border: 1px  solid #fff;
+        padding: 1px 50px;
+        padding-top: 5px;
+        
+    }
+    
+    .rank .container  .bandeira img{
+        display: inline-block;
+        width: 70px;
+        height: 70px ;
+        border-radius: 10%;
+        border: 2px solid #fff;
+        box-shadow: 0 2px 6px #0003;
+    }
+    .rank .container .coin img{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-bottom: 14px;
+    }
 }
