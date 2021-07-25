@@ -1337,7 +1337,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         max-height: 350px;
     }
     .sobre .content .col-left .img-card iframe{
-      
+        margin-left: 2px;
         height:400px;
     
     }
