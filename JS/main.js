@@ -159,3 +159,17 @@ if ($('#nav-menu-container').length) {
 
 window.location = "#wall-1";
 
+$(document).ready(function () {
+  $('.buttons').click(function () {
+      $(this).addClass('active').siblings().removeClass('active');
+     
+      var filter = $(this).attr('data-filter')
+      if (filter == 'all') {
+          $('.event-container').hide(400);
+      } else {
+          $('.event-container').not('.' + filter).hide(200);
+          $('.event-container').filter('.' + filter).show(400);
+      }
+
+  });
+});
