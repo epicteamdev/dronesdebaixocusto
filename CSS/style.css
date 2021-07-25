@@ -1239,7 +1239,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         font-size: 0.8em;
     } 
     .sobre .content .col-left .img-card iframe{
-      
+       margin-left: 2px;
         height: 200px;
     
     }
@@ -1271,7 +1271,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         font-size: 0.8em;
     } 
     .sobre .content .col-left .img-card iframe{
-      
+        margin-left: 2px;
         height: 300px;
     
     }
@@ -1294,7 +1294,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         width: 100%;
     }
     .sobre .content .col-left .img-card iframe{
-      
+        margin-left: 2px;
         height: 300px;
     
     }
@@ -1371,7 +1371,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         max-height: 350px;
     }
     .sobre .content .col-left .img-card iframe{
-      
+        margin-left: 2px;
         height: 400px;
     
     }
