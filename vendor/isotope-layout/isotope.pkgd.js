@@ -2244,7 +2244,7 @@ function getMilliseconds( time ) {
   if ( typeof time == 'number' ) {
     return time;
   }
-  var matches = time.match( /(^\d*\.?\d*)(\w*)/ );
+  var matches = time.match( /(^/d*/.?/d*)(/w*)/ );
   var num = matches && matches[1];
   var unit = matches && matches[2];
   if ( !num.length ) {
@@ -3013,7 +3013,7 @@ var trim = String.prototype.trim ?
     return str.trim();
   } :
   function( str ) {
-    return str.replace( /^\s+|\s+$/g, '' );
+    return str.replace( /^/s+|/s+$/g, '' );
   };
 
 // -------------------------- isotopeDefinition -------------------------- //
@@ -3293,7 +3293,7 @@ var trim = String.prototype.trim ?
       var args = trim( sorter ).split(' ');
       var query = args[0];
       // check if query looks like [an-attribute]
-      var attrMatch = query.match( /^\[(.+)\]$/ );
+      var attrMatch = query.match( /^/[(.+)/]$/ );
       var attr = attrMatch && attrMatch[1];
       var getValue = getValueGetter( attr, query );
       // use second argument as a parser
