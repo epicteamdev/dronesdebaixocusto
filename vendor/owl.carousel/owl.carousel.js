@@ -579,7 +579,7 @@
 			// responsive class
 			if (settings.responsiveClass) {
 				this.$element.attr('class',
-					this.$element.attr('class').replace(new RegExp('(' + this.options.responsiveClass + '-)\\S+\\s', 'g'), '$1' + match)
+					this.$element.attr('class').replace(new RegExp('(' + this.options.responsiveClass + '-)//S+//s', 'g'), '$1' + match)
 				);
 			}
 		}
@@ -765,7 +765,7 @@
 		}
 
 		if ($.support.transform) {
-			stage = this.$stage.css('transform').replace(/.*\(|\)| /g, '').split(',');
+			stage = this.$stage.css('transform').replace(/.*/(|/)| /g, '').split(',');
 			stage = {
 				x: stage[stage.length === 16 ? 12 : 4],
 				y: stage[stage.length === 16 ? 13 : 5]
@@ -1479,7 +1479,7 @@
 			.removeClass(this.options.rtlClass)
 			.removeClass(this.options.dragClass)
 			.removeClass(this.options.grabClass)
-			.attr('class', this.$element.attr('class').replace(new RegExp(this.options.responsiveClass + '-\\S+\\s', 'g'), ''))
+			.attr('class', this.$element.attr('class').replace(new RegExp(this.options.responsiveClass + '-//S+//s', 'g'), ''))
 			.removeData('owl.carousel');
 	};
 
@@ -2282,7 +2282,7 @@
 					Visual example: https://regexper.com/#(http%3A%7Chttps%3A%7C)%5C%2F%5C%2F(player.%7Cwww.%7Capp.)%3F(vimeo%5C.com%7Cyoutu(be%5C.com%7C%5C.be%7Cbe%5C.googleapis%5C.com)%7Cvzaar%5C.com)%5C%2F(video%5C%2F%7Cvideos%5C%2F%7Cembed%5C%2F%7Cchannels%5C%2F.%2B%5C%2F%7Cgroups%5C%2F.%2B%5C%2F%7Cwatch%5C%3Fv%3D%7Cv%5C%2F)%3F(%5BA-Za-z0-9._%25-%5D*)(%5C%26%5CS%2B)%3F
 			*/
 
-			id = url.match(/(http:|https:|)\/\/(player.|www.|app.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com|be\-nocookie\.com)|vzaar\.com)\/(video\/|videos\/|embed\/|channels\/.+\/|groups\/.+\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
+			id = url.match(/(http:|https:|)////(player.|www.|app.)?(vimeo/.com|youtu(be/.com|/.be|be/.googleapis/.com|be/-nocookie/.com)|vzaar/.com)//(video//|videos//|embed//|channels//.+//|groups//.+//|watch/?v=|v//)?([A-Za-z0-9._%-]*)(/&/S+)?/);
 
 			if (id[3].indexOf('youtu') > -1) {
 				type = 'youtube';
