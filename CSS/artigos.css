@@ -844,12 +844,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-transform: uppercase;
     color:#fff;
 }
-@media(max-width: 330px) {
-    
-}
-@media(min-width: 330px) and (max-width: 340px){
-    
-}
 .img-vidio-capa a{
     font-size: 13px;
     text-transform: uppercase;
@@ -1004,6 +998,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .vidio iframe{
         top: 1;
         height: 100%;
+        margin-left: 2px;
     }
     .img-vidio-capa .texto{
         padding-top: 6px;  
@@ -1080,6 +1075,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         .img-vidio-capa .vidio iframe{
             top: 1;
             height: 200px;
+            margin-left: 2px;
         }
         .img-vidio-capa .texto{
             padding-top: 6px;  
@@ -1153,6 +1149,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .vidio iframe{
         top: 1;
         height: 200px;
+        margin-left: 2px;
     }
     .img-vidio-capa .texto{
         padding-top: 6px;  
@@ -1225,6 +1222,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .vidio iframe{
         top: 1;
         height: 300px;
+        margin-left: 2px;
     }
     .img-vidio-capa .texto{
         padding-top: 6px;  
@@ -1295,6 +1293,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .vidio iframe{
         top: 1;
         height: 300px;
+        margin-left: 2px;
     }
     .img-vidio-capa .texto{
         padding-top: 6px;  
@@ -1366,6 +1365,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .vidio iframe{
         top: 1;
         height: 300px;
+        margin-left: 2px;
     }
     .img-vidio-capa .texto{
         padding-top: 6px;  
@@ -1435,6 +1435,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .img-vidio-capa .vidio iframe{
         top: 1;
         height: 400px;
+        margin-left: 2px;
     }
     .img-vidio-capa .texto{
         padding-top: 6px;  
