@@ -1763,6 +1763,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .Agenda .agenda-title{
     align-items: center;
 }
+.Agenda  .agenda-title h3{
+    position: relative;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    top: 40px;
+    margin-left: 40px;
+  }
+
 .Agenda .bloco .event-container {
     font-family: "Roboto", sans-serif;
     max-width: 750px;
@@ -1848,19 +1859,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 20px;
     padding-right: 8px;
   }
-  .Agenda .agenda-title h3{
-    position: relative;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 50px;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    top: 40px;
-    margin-left: 40px;
-  }
-
+ 
 @media (max-width: 650px){
-    .Agenda .agenda-title h3{
+    .Agenda  .agenda-title h3{
         font-size: 1.8em;
     }
     .eventos{
@@ -1879,7 +1880,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .eventos .evento-left .eveto-data .data{
         padding: 10px 0;
     }
-    .Agenda .eventos .evento-right {
+    .Agenda .bloco .eventos .evento-right {
      width: auto;
      margin-right: 1px;
      
@@ -2410,7 +2411,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 10px;
 }
 .rank .titulo {
-   padding: 60px;
+   padding: 40px;
     
 }
 .rank .titulo h1{
@@ -2430,6 +2431,7 @@ body.mobile-nav-active #mobile-nav-toggle {
    margin: auto;
    border-radius: 20px;
    display: flex;
+   margin-bottom: 20px;
 }
 .rank .container table{
     width: 100%;
@@ -2437,6 +2439,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: black;
     white-space: nowrap;
     border-collapse: collapse;
+    
 }
 .rank .container table>thead{
     background-color: #4a86bc;
