@@ -2093,22 +2093,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .depo_tex{
   position: absolute;
-  padding: 20px;
+  padding: 80px;
   z-index: 10;
   color: #fff;
 }
 
 .depo_tex p{
-   font-size: 20px;
+   font-size: 30px;
    text-align: center;
+   font-weight: 800;
 }
 .depo_tex h3{
-    padding: 80px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 500;
 }
  .depo_tex h1{
      text-align: center;
-     font-weight:bold;  
+     font-weight:bold; 
+     padding: 10px; 
+     font-size: 60px;
  }
 
 .depo_slider .depo_myslider img{
@@ -2128,37 +2132,169 @@ body.mobile-nav-active #mobile-nav-toggle {
    to{transform: scale(1.5,1.5);
    }
 }
-@media screen and (max-width: 800px){
-            .depo_myslider{
-                height: 500px;
-            }
-                .depo_tex{
-                    line-height: 25px;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    -webkit-animation-name: posi2;
-                    -webkit-animation-duration:2s;
-                    animation-name: posi2;
-                    animation-duration: 2s;
-                }
-                @-webkit-keyframes posi2{
-                from{top:35%;}
-                to{top:50%}
-            }
-                @keyframes posi2{
-                    from{top:35%;}
-                    to{top:50%}
-            }
-            .depo_tex h1{
-                font-size: 5px;
-            }
-            .depo_tex p{
-                font-size: 3px;
-            }
-            .depo_tex h3{
-                font-size: 15px;
-            }
+
+@media (max-width: 330px){
+    .depo_slider .depo_myslider img{
+       width: 400px;
+       height: 400px;
+    }
+    .depo_tex{
+        position: absolute;
+        padding: 12px;
+        
+      }
+  
+    .depo_tex p{
+        font-size: 15px;
+        text-align: center;
+     }
+     .depo_tex h3{
+         padding: 1px;
+         font-size: 18px;
+     }
+      .depo_tex h1{
+          text-align: center;
+          font-weight:bold;
+          font-size: 30px;  
+          margin-top: 1px;
+      }
+
+}
+@media(min-width: 330px) and (max-width: 400px) {
+    .depo_slider .depo_myslider img{
+        width: 400px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 12px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 15px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 18px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 30px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 400px) and (max-width: 500px) {
+    .depo_slider .depo_myslider img{
+        width: 600px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 16px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 20px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 30px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 500px) and (max-width: 800px) {
+    .depo_slider .depo_myslider img{
+        width: 800px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 20px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 25px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 40px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 800px) and (max-width: 1000px) {
+    .depo_slider .depo_myslider img{
+        width: 1000px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 40px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 25px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 40px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 1000px) and (max-width: 1200px) {
+    .depo_slider .depo_myslider img{
+        width: 1200px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 40px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 25px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 40px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 1800px) and (max-width: 2200px) {
+    .depo_slider .depo_myslider img{
+        width: 1900px;
+        height: 600px;
+    }
 }
 .depo_dotsbox{
    position: absolute;
@@ -2181,6 +2317,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .active, .depo_dot:hover{
    border-color: #466fa6;
 }
+
+
+
 /*Apoio------------------------*/
 .Apoio{
     background-color: #fff;
