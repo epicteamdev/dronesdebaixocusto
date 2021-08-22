@@ -1787,6 +1787,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 10px 0;
 }
   
+.evento-center {
+    background: #222;
+    min-width: 100px;
+    display: block !important; 
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+
+  }
+
   .Agenda .bloco .eventos .evento-left {
     background: #222;
     min-width: 100px;
