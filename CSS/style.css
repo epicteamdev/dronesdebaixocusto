@@ -2060,22 +2060,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /*Depoimento---------------------->*/
-.depiomento{
+.depoimentos{
     background-color: #1d2840;
 }
-.depiomento .depo_slider{
+.depoimentos .depo_slider{
     top:10%;
     position: relative;
     width: 100%;
     padding: 0%;
 }
-.depiomento .depo_myslider{
+.depoimentos .depo_myslider{
     height: 100%;
     display: none;
     overflow: hidden;
 
 }
-.depiomento .depo_myslider .transparente{
+.depoimentos .depo_myslider .transparente{
    background: #0000008a;
    width: 100%;
    height: 100%;
@@ -2094,7 +2094,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-.depiomento .depo_myslider .transparente{
+.depoimentos .depo_myslider .transparente{
    background: #0000008a;
    width: 100%;
    height: 100%;
@@ -2713,24 +2713,23 @@ body.mobile-nav-active #mobile-nav-toggle {
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
 }
-/*RANKING*/
-.rank{
+/*equipesING*/
+.equipes{
     background-color:#1d2840;
     align-items: center;
     padding: 10px;
 }
-.rank .titulo {
+.equipes .titulo {
    padding: 40px;
     
 }
-.rank .titulo h1{
+.equipes .titulo h1{
     color: #ffffff;
     font-size: 2em;
     font-weight: 700;
-    margin-left: 35%;
-    
 }
-.rank .container{
+
+.equipes .container{
    position: relative;
    max-width: 1000px;
    border:5px solid #235697;
@@ -2742,7 +2741,7 @@ body.mobile-nav-active #mobile-nav-toggle {
    display: flex;
    margin-bottom: 20px;
 }
-.rank .container table{
+.equipes .container table{
     width: 100%;
     font-size: 20px;
     color: black;
@@ -2750,35 +2749,35 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-collapse: collapse;
     
 }
-.rank .container table>thead{
+.equipes .container table>thead{
     background-color: #4a86bc;
     color: #fff;
     border-radius: 50%;
 }
-.rank .container table>thead th{
+.equipes .container table>thead th{
     padding: 15px;
 }
-.rank .container table th,
+.equipes .container table th,
 table td{
     border: 1px  solid #fff;
     padding: 5px 50px;
     padding-top: 15px;
     
 }
-.rank .container table td p{
+.equipes .container table td p{
     color: #466fa6;
-    font-size: 1.4em;
+    font-size: 0.9em;
     font-weight: 800;
     display: inline-block;
 }
-.rank .container table td h3{
+.equipes .container table td h3{
     color:#466fa6;
     font-size: 1.4em;
     font-weight: 700;
     display: inline-block;
     margin-left: 10px;
 }
-.rank .container  .bandeira img{
+.equipes .container  .bandeira img{
     display: inline-block;
     width: 150px;
     height: 90px ;
@@ -2786,47 +2785,47 @@ table td{
     border: 2px solid #fff;
     box-shadow: 0 2px 6px #0003;
 }
-.rank .container .coin img{
+.equipes .container .membros{
     display: inline-block;
     width: 40px;
     height: 40px;
     margin-left: 5px;
-    margin-bottom: 14px;
+    margin-bottom: 100px;
 }
 @media(max-width: 340px){
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
-        font-size: 1.4em;
+    .equipes .titulo h1{
+        font-size: 1.8em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 10px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 5px;
@@ -2834,7 +2833,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -2842,50 +2841,49 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .membros{
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-left: 0px;
-        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     
 }
 @media (min-width: 340px) and (max-width: 400px){
     
-        .rank{
+        .equipes{
             padding: 1px;
             padding-bottom: 10px;
         }
-        .rank .titulo {
-           padding: 8px;
+        .equipes .titulo {
+           padding: 30px;
             
         }
-        .rank .titulo h1{
-            font-size: 1.4em;
+        .equipes .titulo h1{
+            font-size: 1.8em;
             margin-left: 10%;
-            margin-top: 2%; 
     
         }
-        .rank .container{/*parte do contetner*/
+        .equipes .container{/*parte do contetner*/
            border:5px solid #235697;
            background-color:#fff;
            padding: 2px;
            border-radius: 10px;
         }
-        .rank .container table{
+        .equipes .container table{
             width: 100%;
             font-size: 10px;
         }
-        .rank .container table>thead{
+        .equipes .container table>thead{
             background-color: #4a86bc;
             color: #fff;
             border-radius: 50%;
         }
-        .rank .container table>thead th{/*parteazul*/
+        .equipes .container table>thead th{/*parteazul*/
             padding: 5px;
         }
-        .rank .container table th,
+        .equipes .container table th,
         table td{
             border: 1px  solid #fff;
             padding: 1px 10px;
@@ -2893,7 +2891,7 @@ table td{
             
         }
         
-        .rank .container  .bandeira img{
+        .equipes .container  .bandeira img{
             display: inline-block;
             width: 70px;
             height: 70px ;
@@ -2901,51 +2899,51 @@ table td{
             border: 2px solid #fff;
             box-shadow: 0 2px 6px #0003;
         }
-        .rank .container .coin img{
+        .equipes .container .membros{
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin-left: 5px;
-            margin-bottom: 14px;
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
         
  
 }
 @media (min-width: 400.1px) and (max-width: 500px){
     
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
+    .equipes .titulo h1{
         font-size: 1.4em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 10px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 10px;
@@ -2953,7 +2951,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -2961,51 +2959,51 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .membros{
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-left: 5px;
-        margin-bottom: 14px;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     
 
 }
 @media (min-width: 500.1px) and (max-width: 600px){
     
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
+    .equipes .titulo h1{
         font-size: 1.8em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 15px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 20px;
@@ -3013,7 +3011,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -3021,7 +3019,7 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .coin img{
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -3031,39 +3029,39 @@ table td{
 }
 @media (min-width: 600.1px) and (max-width: 800px){
     
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
+    .equipes .titulo h1{
         font-size: 1.8em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 15px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 50px;
@@ -3071,7 +3069,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -3079,7 +3077,7 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .coin img{
         display: inline-block;
         width: 20px;
         height: 20px;
