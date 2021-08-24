@@ -2615,6 +2615,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media(max-width: 270px){
     .galeria .btn{
+        
     }
 }
 @media (min-width: 270px) and (max-width: 500px){
