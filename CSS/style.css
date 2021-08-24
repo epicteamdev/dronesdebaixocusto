@@ -9,7 +9,7 @@ html, body, #home {
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/Nova-pasta/two-young-girls-doing-science-experiments-together.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/Nova-pasta/two-young-girls-doing-science-experiments-together.jpg);
     font-family: "Open Sans", sans-serif;
     background-size: cover;
     background-attachment: fixed;
@@ -1717,7 +1717,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /*AGENDA---------------------------------*/
 .Agenda{
-    background-color: #123123;
+    background-color: #1d2840;
     padding: 2px;
 }
 .Agenda .controles {
@@ -1787,6 +1787,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 10px 0;
 }
   
+.evento-center {
+    background: #222;
+    min-width: 100px;
+    display: block !important; 
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+
+  }
+
   .Agenda .bloco .eventos .evento-left {
     background: #222;
     min-width: 100px;
@@ -2046,22 +2060,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /*Depoimento---------------------->*/
-.depiomento{
+.depoimentos{
     background-color: #1d2840;
 }
-.depiomento .depo_slider{
+.depoimentos .depo_slider{
     top:10%;
     position: relative;
     width: 100%;
     padding: 0%;
 }
-.depiomento .depo_myslider{
+.depoimentos .depo_myslider{
     height: 100%;
     display: none;
     overflow: hidden;
 
 }
-.depiomento .depo_myslider .transparente{
+.depoimentos .depo_myslider .transparente{
    background: #0000008a;
    width: 100%;
    height: 100%;
@@ -2080,7 +2094,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-.depiomento .depo_myslider .transparente{
+.depoimentos .depo_myslider .transparente{
    background: #0000008a;
    width: 100%;
    height: 100%;
@@ -2093,22 +2107,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .depo_tex{
   position: absolute;
-  padding: 20px;
+  padding: 80px;
   z-index: 10;
   color: #fff;
 }
 
 .depo_tex p{
-   font-size: 20px;
+   font-size: 30px;
    text-align: center;
+   font-weight: 800;
 }
 .depo_tex h3{
-    padding: 80px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 500;
 }
  .depo_tex h1{
      text-align: center;
-     font-weight:bold;  
+     font-weight:bold; 
+     padding: 10px; 
+     font-size: 60px;
  }
 
 .depo_slider .depo_myslider img{
@@ -2128,37 +2146,169 @@ body.mobile-nav-active #mobile-nav-toggle {
    to{transform: scale(1.5,1.5);
    }
 }
-@media screen and (max-width: 800px){
-            .depo_myslider{
-                height: 500px;
-            }
-                .depo_tex{
-                    line-height: 25px;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    -webkit-animation-name: posi2;
-                    -webkit-animation-duration:2s;
-                    animation-name: posi2;
-                    animation-duration: 2s;
-                }
-                @-webkit-keyframes posi2{
-                from{top:35%;}
-                to{top:50%}
-            }
-                @keyframes posi2{
-                    from{top:35%;}
-                    to{top:50%}
-            }
-            .depo_tex h1{
-                font-size: 5px;
-            }
-            .depo_tex p{
-                font-size: 3px;
-            }
-            .depo_tex h3{
-                font-size: 15px;
-            }
+
+@media (max-width: 330px){
+    .depo_slider .depo_myslider img{
+       width: 400px;
+       height: 400px;
+    }
+    .depo_tex{
+        position: absolute;
+        padding: 12px;
+        
+      }
+  
+    .depo_tex p{
+        font-size: 15px;
+        text-align: center;
+     }
+     .depo_tex h3{
+         padding: 1px;
+         font-size: 18px;
+     }
+      .depo_tex h1{
+          text-align: center;
+          font-weight:bold;
+          font-size: 30px;  
+          margin-top: 1px;
+      }
+
+}
+@media(min-width: 330px) and (max-width: 400px) {
+    .depo_slider .depo_myslider img{
+        width: 400px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 12px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 15px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 18px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 30px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 400px) and (max-width: 500px) {
+    .depo_slider .depo_myslider img{
+        width: 600px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 16px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 20px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 30px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 500px) and (max-width: 800px) {
+    .depo_slider .depo_myslider img{
+        width: 800px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 20px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 25px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 40px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 800px) and (max-width: 1000px) {
+    .depo_slider .depo_myslider img{
+        width: 1000px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 40px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 25px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 40px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 1000px) and (max-width: 1200px) {
+    .depo_slider .depo_myslider img{
+        width: 1200px;
+        height: 400px;
+     }
+     .depo_tex{
+         position: absolute;
+         padding: 40px;
+         
+       }
+   
+     .depo_tex p{
+         font-size: 20px;
+         text-align: center;
+      }
+      .depo_tex h3{
+          padding: 1px;
+          font-size: 25px;
+      }
+       .depo_tex h1{
+           text-align: center;
+           font-weight:bold;
+           font-size: 40px;  
+           margin-top: 10px;
+       }
+}
+@media(min-width: 1800px) and (max-width: 2200px) {
+    .depo_slider .depo_myslider img{
+        width: 1900px;
+        height: 600px;
+    }
 }
 .depo_dotsbox{
    position: absolute;
@@ -2181,6 +2331,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .active, .depo_dot:hover{
    border-color: #466fa6;
 }
+
+
+
 /*Apoio------------------------*/
 .Apoio{
     background-color: #fff;
@@ -2560,24 +2713,23 @@ body.mobile-nav-active #mobile-nav-toggle {
     -webkit-transform: scale(1.1);
     transform:scale(1.1);
 }
-/*RANKING*/
-.rank{
+/*equipesING*/
+.equipes{
     background-color:#1d2840;
     align-items: center;
     padding: 10px;
 }
-.rank .titulo {
+.equipes .titulo {
    padding: 40px;
     
 }
-.rank .titulo h1{
+.equipes .titulo h1{
     color: #ffffff;
     font-size: 2em;
     font-weight: 700;
-    margin-left: 35%;
-    
 }
-.rank .container{
+
+.equipes .container{
    position: relative;
    max-width: 1000px;
    border:5px solid #235697;
@@ -2589,7 +2741,7 @@ body.mobile-nav-active #mobile-nav-toggle {
    display: flex;
    margin-bottom: 20px;
 }
-.rank .container table{
+.equipes .container table{
     width: 100%;
     font-size: 20px;
     color: black;
@@ -2597,35 +2749,35 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-collapse: collapse;
     
 }
-.rank .container table>thead{
+.equipes .container table>thead{
     background-color: #4a86bc;
     color: #fff;
     border-radius: 50%;
 }
-.rank .container table>thead th{
+.equipes .container table>thead th{
     padding: 15px;
 }
-.rank .container table th,
+.equipes .container table th,
 table td{
     border: 1px  solid #fff;
     padding: 5px 50px;
     padding-top: 15px;
     
 }
-.rank .container table td p{
+.equipes .container table td p{
     color: #466fa6;
-    font-size: 1.4em;
+    font-size: 0.9em;
     font-weight: 800;
     display: inline-block;
 }
-.rank .container table td h3{
+.equipes .container table td h3{
     color:#466fa6;
     font-size: 1.4em;
     font-weight: 700;
     display: inline-block;
     margin-left: 10px;
 }
-.rank .container  .bandeira img{
+.equipes .container  .bandeira img{
     display: inline-block;
     width: 150px;
     height: 90px ;
@@ -2633,47 +2785,47 @@ table td{
     border: 2px solid #fff;
     box-shadow: 0 2px 6px #0003;
 }
-.rank .container .coin img{
+.equipes .container .membros{
     display: inline-block;
     width: 40px;
     height: 40px;
     margin-left: 5px;
-    margin-bottom: 14px;
+    margin-bottom: 100px;
 }
 @media(max-width: 340px){
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
-        font-size: 1.4em;
+    .equipes .titulo h1{
+        font-size: 1.8em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 10px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 5px;
@@ -2681,7 +2833,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -2689,50 +2841,49 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .membros{
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-left: 0px;
-        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     
 }
 @media (min-width: 340px) and (max-width: 400px){
     
-        .rank{
+        .equipes{
             padding: 1px;
             padding-bottom: 10px;
         }
-        .rank .titulo {
-           padding: 8px;
+        .equipes .titulo {
+           padding: 30px;
             
         }
-        .rank .titulo h1{
-            font-size: 1.4em;
+        .equipes .titulo h1{
+            font-size: 1.8em;
             margin-left: 10%;
-            margin-top: 2%; 
     
         }
-        .rank .container{/*parte do contetner*/
+        .equipes .container{/*parte do contetner*/
            border:5px solid #235697;
            background-color:#fff;
            padding: 2px;
            border-radius: 10px;
         }
-        .rank .container table{
+        .equipes .container table{
             width: 100%;
             font-size: 10px;
         }
-        .rank .container table>thead{
+        .equipes .container table>thead{
             background-color: #4a86bc;
             color: #fff;
             border-radius: 50%;
         }
-        .rank .container table>thead th{/*parteazul*/
+        .equipes .container table>thead th{/*parteazul*/
             padding: 5px;
         }
-        .rank .container table th,
+        .equipes .container table th,
         table td{
             border: 1px  solid #fff;
             padding: 1px 10px;
@@ -2740,7 +2891,7 @@ table td{
             
         }
         
-        .rank .container  .bandeira img{
+        .equipes .container  .bandeira img{
             display: inline-block;
             width: 70px;
             height: 70px ;
@@ -2748,51 +2899,51 @@ table td{
             border: 2px solid #fff;
             box-shadow: 0 2px 6px #0003;
         }
-        .rank .container .coin img{
+        .equipes .container .membros{
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin-left: 5px;
-            margin-bottom: 14px;
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
         
  
 }
 @media (min-width: 400.1px) and (max-width: 500px){
     
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
+    .equipes .titulo h1{
         font-size: 1.4em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 10px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 10px;
@@ -2800,7 +2951,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -2808,51 +2959,51 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .membros{
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-left: 5px;
-        margin-bottom: 14px;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     
 
 }
 @media (min-width: 500.1px) and (max-width: 600px){
     
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
+    .equipes .titulo h1{
         font-size: 1.8em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 15px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 20px;
@@ -2860,7 +3011,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -2868,7 +3019,7 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .coin img{
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -2878,39 +3029,39 @@ table td{
 }
 @media (min-width: 600.1px) and (max-width: 800px){
     
-    .rank{
+    .equipes{
         padding: 1px;
         padding-bottom: 10px;
     }
-    .rank .titulo {
+    .equipes .titulo {
        padding: 8px;
         
     }
-    .rank .titulo h1{
+    .equipes .titulo h1{
         font-size: 1.8em;
         margin-left: 10%;
         margin-top: 2%; 
 
     }
-    .rank .container{/*parte do contetner*/
+    .equipes .container{/*parte do contetner*/
        border:5px solid #235697;
        background-color:#fff;
        padding: 2px;
        border-radius: 10px;
     }
-    .rank .container table{
+    .equipes .container table{
         width: 100%;
         font-size: 15px;
     }
-    .rank .container table>thead{
+    .equipes .container table>thead{
         background-color: #4a86bc;
         color: #fff;
         border-radius: 50%;
     }
-    .rank .container table>thead th{/*parteazul*/
+    .equipes .container table>thead th{/*parteazul*/
         padding: 5px;
     }
-    .rank .container table th,
+    .equipes .container table th,
     table td{
         border: 1px  solid #fff;
         padding: 1px 50px;
@@ -2918,7 +3069,7 @@ table td{
         
     }
     
-    .rank .container  .bandeira img{
+    .equipes .container  .bandeira img{
         display: inline-block;
         width: 70px;
         height: 70px ;
@@ -2926,7 +3077,7 @@ table td{
         border: 2px solid #fff;
         box-shadow: 0 2px 6px #0003;
     }
-    .rank .container .coin img{
+    .equipes .container .coin img{
         display: inline-block;
         width: 20px;
         height: 20px;

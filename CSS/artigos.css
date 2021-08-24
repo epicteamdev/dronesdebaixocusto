@@ -8,7 +8,7 @@ html, body, #home {
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/Nova-pasta/two-young-girls-doing-science-experiments-together.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/Nova-pasta/two-young-girls-doing-science-experiments-together.jpg);
     font-family: "Open Sans", sans-serif;
     background-size: cover;
     background-attachment: fixed;

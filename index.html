@@ -1,832 +1,1121 @@
-<!DOCTYPE html>
 
-<html lang="pt-br">
+        <!DOCTYPE html>
 
-<head>
+        <html lang="pt-br">
 
-    <!-- metas obrigatórias -->
-    <!-- viewport é toda área que conseguimos visualizar do site-->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <head>
 
-    <title>EPIC</title>
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+            <!-- metas obrigatórias -->
+            <!-- viewport é toda área que conseguimos visualizar do site-->
+            <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+            <title>EPIC</title>
+            <meta content="" name="descriptison">
+            <meta content="" name="keywords">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
-        rel="stylesheet">
+            <!-- Favicons -->
+            <link rel="apple-touch-icon" sizes="57x57" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/favicon-16x16.png">
+            <link rel="manifest" href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/favicon/ms-icon-144x144.png">
+            <meta name="theme-color" content="#ffffff">
 
-    <!-- Native Fonts -->
-    <link href="css/native_font.css" rel="stylesheet">
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+                rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="vendor/aos/aos.css" rel="stylesheet">
-    <!--magnific-popup css cdn link-->
+            <!-- Native Fonts -->
+            <link href="css/native_font.css" rel="stylesheet">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+            <!-- Vendor CSS Files -->
+            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+            <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+            <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+            <link href="vendor/venobox/venobox.css" rel="stylesheet">
+            <link href="vendor/aos/aos.css" rel="stylesheet">
+            <!--magnific-popup css cdn link-->
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="./CSS/style.css" rel="stylesheet">
+            <!-- font awesome -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+                integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-</head>
+            <!-- Template Main CSS File -->
+            <link href="./CSS/style.css" rel="stylesheet">
 
-<body>
+        </head>
 
-    <!--------- header --------->
-    <header id="header" class="header-transparent">
-        <div class="container">
-            <!-- container -->
+        <body oncontextmenu="return false;">
 
-            <div id="logo">
-                <!-- logo -->
-                <a href="index.html">
-                    <img src="img/logos/logo.png" width="142px">
-                </a>
-            </div>
+            <!--------- header --------->
+            <header id="header" class="header-transparent">
+                <div class="container">
+                    <!-- container -->
 
-            <nav id="nav-menu-container">
-                <!-- start nav -->
-                <ul class="nav-menu">
-                    <!-- menu -->
-                    <li class="menu-ativo">
-                        <a href="index.html"> Início </a>
-                    </li>
-                    <li>
-                        <a href="#Sobre">Sobre</a>
-
-                    </li>
-                    <li>
-                        <a href="#Agenda2">Cronograma</a>
-                    </li>
-                    <li>
-                        <a href="#cordenadores">Coordenadores</a>
-                    </li>
-                    <li>
-                        <a href="#galeria">Galeria</a>
-                    </li>
-
-                    <li>
-                        <a href="#Cases">Publicações</a>
-                    </li>
-                    <!--li>
-                            <a href="#Cases">Noticia</a>
-                        </li-->
-                </ul>
-            </nav> <!-- end navegation -->
-        </div> <!-- end container -->
-    </header> <!-- end header -->
-    <!----- home section ------>
-    <main id="main">
-
-        <section class="home" id="home">
-            <div class="inicio">
-                <div class="cont-inicio">
-                    <div class="logo">
-                        <img src="img/logos/logoPrincipalProjeto.png">
+                    <div id="logo">
+                        <!-- logo -->
+                        <a href="index.html">
+                            <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/logo.png" width="142px">
+                        </a>
                     </div>
-                    <div class="transparente"></div>
-                    <img class="imgfundo" src="img\capaPrincipal.jpg">
+
+                    <nav id="nav-menu-container">
+                        <!-- start nav -->
+                        <ul class="nav-menu">
+                            <!-- menu -->
+                            <li class="menu-ativo">
+                                <a href="index.html"> Início </a>
+                            </li>
+                            <li>
+                                <a href="#Sobre">Sobre</a>
+
+                            </li>
+                            <li>
+                                <a href="#Agenda">Cronograma</a>
+                            </li>
+                            <li>
+                                <a href="#cordenadores">Coordenadores</a>
+                            </li>
+                            </li>
+                            <li>
+                                <a href="#equipes">Equipes</a>
+                            </li>
+                            <li>
+                                <a href="#galeria">Galeria</a>
+                            </li>
+
+                            <li>
+                                <a href="#depoimentos">Depoimentos</a>
+                            </li>
+
+                            <li>
+                                <a href="#Cases">Publicações</a>
+                            </li>
+                            <!--li>
+                                    <a href="#Cases">Noticia</a>
+                                </li-->
+                        </ul>
+                    </nav> <!-- end navegation -->
+                </div> <!-- end container -->
+            </header> <!-- end header -->
+            <!----- home section ------>
+            <main id="main">
+
+                <section class="home" id="home">
+                    <div class="inicio">
+                        <div class="cont-inicio">
+                            <div class="logo">
+                                <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/logoPrincipalProjeto.png">
+                            </div>
+                            <div class="transparente"></div>
+                            <img class="imgfundo" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/capaPrincipal.jpg">
+                        </div>
+                </section>
+                <!-- iniciativas section -->
+                <section class="sobre" id="Sobre">
+                    <div class="title">
+                        <h1>Sobre</h1>
+                    </div>
+                    <div class="bloco">
+                        <div class="content">
+                            <div class="column col-left">
+                                <div class="img-card">
+                                    <iframe src="https://www.youtube.com/embed/jENU2kPIeqI" title="YouTube video player"
+                                        frameborder="0" allow="accelerometer; 
+                                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="column col-right">
+                                <div class="img-logo">
+                                    <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/horizontalSemFundo.png">
+
+                                </div>
+                                <h4 class="content-title"><b> Impressão 3D e Robótica:
+                                        Drones de Baixo Custo
+                                    </b></h4>
+                                <p>
+                                    O projeto, que está integrado ao STEAM Tocantins, visa promover o conhecimento científico,
+                                    a cultura maker no ensino médio, a interação entre os alunos da Universidade e do Ensino
+                                    Médio, e a aprendizagem ativa baseada no desenvolvimento de veículos aéreos não tripulados
+                                    ones) de baixo custo, por meio de Manufatura Aditiva (modelagem e impressão 3D),
+                                    Robótica e Metodologias Ativas. Essa é uma iniciativa promovida pela parceria entre
+                                    SEDUC Tocantins e o Programa EPIC (Engajar, Praticar, Integrar e Colaborar) do LabTec-UFT
+                                    (Laboratório de Tecnologias 3D), que tem como referência o projeto <a
+                                        href="https://dronecoria.org" target="_blank">Dronecoria</a>
+                                    de código aberto sediado na Espanha e com uma rede de
+                                    pesquisadores, estudantes e professores colaboradores no Brasil.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-1">
+                            <div class="column col-left">
+                                <h4 class="content-title"><b>Quem Participará</b></h4>
+                                <p>
+                                    Alunos de 1ª a 3ª séries do Ensino Médio das Escolas Estaduais do Tocantins e Superior da
+                                    Universidade Federal do Tocantins (UFT). Os alunos do Ensino Médio atendidos serão os
+                                    participantes dos clubes de robótica da Escola Estadual Elizângela Glória Cardoso, Colégio
+                                    de Ensino Médio de Taquaralto, Colégio Militar de Gurupi, Escola Estadual Vale Do Sol em
+                                    Palmas e Escola Ana Macedo Maia (Porto Nacional). Já os alunos do ensino superior serão do
+                                    Curso de Bacharelado em Ciência da Computação, Câmpus Palmas.
+
+                                </p>
+                                <h4 class="content-title"><b>Projeto STEAM Tocantins</b></h4>
+                                <div class="img-logo1">
+                                    <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/steamSemFundo.png" width="144px">
+                                </div>
+                                <p>
+                                    STEAM Tocantins (Science, Technology, Engineering, Arts e Mathematics) é um projeto
+                                    realizado
+                                    em parceria pela SEDUC, LabTec-UFT e o Programa EPIC (Engajar, Praticar, Integrar e
+                                    Colaborar),
+                                    que visa promover e disseminar o conhecimento científico, a aprendizagem ativa baseada em
+                                    resolução
+                                    de problemas, na criatividade e em projetos mão-na-massa (maker) para preparar os alunos e
+                                    professores do ensino médio da rede pública estadual e do ensino superior para os desafios
+                                    do
+                                    futuro como cidadãos digitais ativos e protagonistas da sua própria história de vida.
+                                </p>
+                            </div>
+                            <div class="column col-right">
+                                <div class="img-card">
+                                    <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/stock/metodoSteam.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- CRONOGRAMA USANDO JS -->
+                <section class="Agenda" id="Agenda">
+                    <div class="agenda-title">
+                        <h3>Cronograma</h3>
+                    </div>
+                    <!-- DEFINE OS TÓPICOS PARA SEPARAÇÃO DO CRONOGRAMA -->
+                    <ul class="controles">  
+                        <li class="buttons active" data-filter="MODULO-1">MÓDULO I</li>
+                        <li class="buttons" data-filter="MODULO-2">MÓDULO II</li>
+                        <li class="buttons" data-filter="MODULO-3">MÓDULO III</li>
+                    </ul>
+                <div class="bloco">
+                    <!-- MÓDULO 1 -->
+                        <div class="event-container MODULO-1">
+                            <div class="evento-center">
+                                MÓDULO I - Introdução à Modelagem 3D com Blender
+                            </div>
+                        </div>
+                        <!-- DIA 1-->
+                        <div class="event-container MODULO-1">
+                            <div class="eventos">
+                                <div class="evento-left">
+                                    <div class="eveto-data">
+                                        <div class="hora">22</div>
+                                        <div class="hora">Mai</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="evento-right">
+                                    <h3 class="evento-title"><b>Aula 1</b></h3>    
+                                        <div class="evento-discricao">
+                                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                            <div class="evento-hora">
+                                                <a href="pages/artigoaula1.html">
+                                                    Saiba Mais
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+
+                        <!-- DIA 2-->
+                            <div class="event-container MODULO-1">
+                                <div class="eventos">
+                                    <div class="evento-left">
+                                        <div class="eveto-data">
+                                            <div class="hora">29</div>
+                                            <div class="hora">Mai</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="evento-right">
+                                        <h3 class="evento-title"><b>Aula 2</b></h3>    
+                                        <div class="evento-discricao">
+                                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                            <div class="evento-hora">
+                                                <a href="pages/artigoaula2.html">
+                                                    Saiba Mais
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                    
+                    <!-- MÓDULO 2 -->
+                        <div class="event-container MODULO-2" style="display: none;">
+                            <div class="evento-center">
+                                MÓDULO II - Introdução à Impressão 3D
+                            </div>
+                        </div>
+                        <!-- DIA 1-->
+                        <div class="event-container MODULO-2" style="display: none;">
+                            <div class="eventos">
+                                <div class="evento-left">
+                                    <div class="eveto-data">
+                                        <div class="hora">12</div>
+                                        <div class="hora">Jun</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="evento-right">
+                                    <h3 class="evento-title"><b>Aula 1</b></h3>    
+                                        <div class="evento-discricao">
+                                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                            <div class="evento-hora">
+                                                <a href="pages/artigoaula4.html">
+                                                    Saiba Mais
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            
+                        <!-- DIA 2-->
+                            <div class="event-container MODULO-2" style="display: none;">
+                                <div class="eventos">
+                                    <div class="evento-left">
+                                        <div class="eveto-data">
+                                            <div class="hora">19</div>
+                                            <div class="hora">Jun</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="evento-right">
+                                        <h3 class="evento-title"><b>Aula 2</b></h3>      
+                                        <div class="evento-discricao">
+                                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                            <div class="evento-hora">
+                                                <a href="pages/artigoaula5.html">
+                                                    Saiba Mais
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                    <!-- MÓDULO 3 -->  
+                        <div class="event-container MODULO-3" style="display: none;">
+                            <div class="evento-center">
+                                MÓDULO III - Programação de Drones com Arduino
+                            </div>
+                        </div>  
+                        <!-- DIA 1-->
+                        <div class="event-container MODULO-3" style="display: none;">
+                            <div class="eventos">
+                                <div class="evento-left">
+                                    <div class="eveto-data">
+                                        <div class="hora">26</div>
+                                        <div class="hora">Jun</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="evento-right">
+                                    <h3 class="evento-title"><b>Aula 1</b></h3>    
+                                    <div class="evento-discricao">
+                                        <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                        <div class="evento-hora">
+                                            <a href="pages/artigoaula7.html">
+                                                Saiba Mais
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- DIA 2-->
+                                    <div class="evento-left">
+                                        <div class="eveto-data">
+                                            <div class="hora">03</div>
+                                            <div class="hora">Jul</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="evento-right">
+                                        <h3 class="evento-title"><b>Aula 2</b></h3>      
+                                        <div class="evento-discricao">
+                                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                            <div class="evento-hora">
+                                                <a href="pages/artigoaula8.html">
+                                                    Saiba Mais
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        <!-- DIA 3-->
+                        <div class="event-container MODULO-3" style="display: none;">
+                            <div class="eventos">
+                                <div class="evento-left">
+                                    <div class="eveto-data">
+                                        <div class="hora">10</div>
+                                        <div class="hora">Jul</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="evento-right">
+                                    <h3 class="evento-title"><b>Aula 3</b></h3>    
+                                        <div class="evento-discricao">
+                                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                            <div class="evento-hora">
+                                                INDISPONÍVEL
+                                                <!-- <a href="pages/artigoaula4.html">
+                                                    Saiba Mais
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                        <!-- DIA 4-->
+                                    <div class="evento-left">
+                                        <div class="eveto-data">
+                                            <div class="hora">31</div>
+                                            <div class="hora">Jul</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="evento-right">
+                                        <h3 class="evento-title"><b>Aula 4</b></h3>      
+                                        <div class="evento-discricao">
+                                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                            <div class="evento-hora">
+                                                INDISPONÍVEL
+                                                <!-- <a href="pages/artigoaula4.html">
+                                                    Saiba Mais
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
                 </div>
-        </section>
 
-        <!-- iniciativas section -->
-        <section class="sobre" id="Sobre">
-            <div class="title">
-                <h1>Sobre</h1>
-            </div>
-            <div class="bloco">
-                <div class="content">
-                    <div class="column col-left">
-                        <div class="img-card">
-                            <iframe src="https://www.youtube.com/embed/J6ElUnp0jO0" title="YouTube video player"
-                                frameborder="0" allow="accelerometer; 
-                            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+                </section>
+                <!-- <section class="Agenda2" id="Agenda2">
+                    <div class="agenda-title">
+                        <h3>Cronograma 2</h3>
                     </div>
-                    <div class="column col-right">
-                        <div class="img-logo">
-                            <img src="img\logos\horizontalSemFundo.png">
+                    <div class="event-container1">
+                        <div class="eventos">S
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">22</div>
+                                    <div class="Mes">Mai</div>
+                                </div>
+                            </div>
 
+                            <div class="evento-right">
+                                <h3 class="evento-title"><b>MODULO I:</b> Programação de
+                                    Drones
+                                    com Arduino</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA I</h3>
+                                    <b>Horário:</b> 8h às 12h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="pages/artigoaula1.html">
+                                            <img src="img/icon/relogio.png" alt=""> Saiba Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">29</div>
+                                    <div class="Mes">Mai</div>
+
+                                </div>
+                            </div>
+
+                            <div class="evento-right">
+                                <h3 class="evento-title"><b>MODULO I:</b> Programação de
+                                    Drones
+                                    com Arduino</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA II</h3>
+                                    <b>Horário:</b> 8h às 12h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="pages/artigoaula2.html">
+                                            <img src="img/icon/relogio.png" alt=""> Saiba Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="content-title"><b> Impressão 3D e Robótica:
-                                Drones de Baixo Custo
-                            </b></h4>
-                        <p>
-                            O projeto, que está integrado ao STEAM Tocantins, visa promover o conhecimento científico,
-                            a cultura maker no ensino médio, a interação entre os alunos da Universidade e do Ensino
-                            Médio, e a aprendizagem ativa baseada no desenvolvimento de veículos aéreos não tripulados
-                            ones) de baixo custo, por meio de Manufatura Aditiva (modelagem e impressão 3D),
-                            Robótica e Metodologias Ativas. Essa é uma iniciativa promovida pela parceria entre
-                            SEDUC Tocantins e o Programa EPIC (Engajar, Praticar, Integrar e Colaborar) do LabTec-UFT
-                            (Laboratório de Tecnologias 3D), que tem como referência o projeto <a
-                                href="https://dronecoria.org" target="_blank">Dronecoria</a>
-                            de código aberto sediado na Espanha e com uma rede de
-                            pesquisadores, estudantes e professores colaboradores no Brasil.
-                        </p>
-                    </div>
+                        <div class="eventos">
+
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">12</div>
+                                    <div class="Mes">Jun</div>
+
+                                </div>
+                            </div>
+
+                            <div class="evento-right">
+                                <h3 class="evento-title2"><b>MODULO ii:</b> Introdução à
+                                    Impressão 3D</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA I</h3>
+                                    <b>Horário:</b> 8h às 12h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="pages/artigoaula4.html"><img src="img/icon/relogio.png" alt="">Saiba
+                                            Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">19</div>
+                                    <div class="Mes">Jun</div>
+
+                                </div>
+                            </div>
+
+                            <div class="evento-right">
+                                <h3 class="evento-title2"><b>MODULO ii:</b> Introdução à
+                                    Impressão 3D</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA II</h3>
+                                    <b>Horário:</b> 8h às 12h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="pages/artigoaula5.html"><img src="img/icon/relogio.png" alt="">Saiba
+                                            Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="eventos">
+
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">26</div>
+                                    <div class="Mes">Jun</div>
+
+                                </div>
+                            </div>
+
+                            <div class="evento-right">
+                                <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
+                                    Drones
+                                    com Arduino</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA I</h3>
+                                    <b>Horário:</b> 8h às 12h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="pages/artigoaula6.html"><img src="img/icon/relogio.png" alt=""> Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">03</div>
+                                    <div class="Mes">Jul</div>
+
+                                </div>
+                            </div>
+
+                            <div class="evento-right">
+                                <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
+                                    Drones
+                                    com Arduino</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA II</h3>
+                                    <b>Horário:</b> 8h às 12h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="pages/artigoaula7.html"><img src="img/icon/relogio.png" alt=""> Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eventos">
+
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">10</div>
+                                    <div class="Mes">Jul</div>
+
+                                </div>
+                            </div>
+
+                            <div class="evento-right">
+                                <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
+                                    Drones
+                                    com Arduino</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA III</h3>
+                                    <b>Horário:</b> 8h às 18h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="pages/artigoaula8.html"><img src="img/icon/relogio.png" alt=""> Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="evento-left">
+                                <div class="eveto-data">
+                                    <div class="data">31</div>
+                                    <div class="Mes">Jul</div>
+
+                                </div>
+                            </div>
+
+                            <div class="evento-right">
+                                <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
+                                    Drones
+                                    com Arduino</h3>
+                                <div class="evento-discricao">
+                                    <h3>AULA IV</h3>
+                                    <b>Horário:</b> 8h às 12h<br>
+                                    <b>Local:</b> LabTec-UFT no BLOCO III<br>
+                                    <div class="evento-hora">
+                                        <a href="index.html"><img src="img/icon/relogio.png" alt="" /> 8h </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-                <div class="content-1">
-                    <div class="column col-left">
-                        <h4 class="content-title"><b>Quem Participará</b></h4>
-                        <p>
-                            Alunos de 1ª a 3ª séries do Ensino Médio das Escolas Estaduais do Tocantins e Superior da
-                            Universidade Federal do Tocantins (UFT). Os alunos do Ensino Médio atendidos serão os
-                            participantes dos clubes de robótica da Escola Estadual Elizângela Glória Cardoso, Colégio
-                            de Ensino Médio de Taquaralto, Colégio Militar de Gurupi, Escola Estadual Vale Do Sol em
-                            Palmas e Escola Ana Macedo Maia (Porto Nacional). Já os alunos do ensino superior serão do
-                            Curso de Bacharelado em Ciência da Computação, Câmpus Palmas.
 
-                        </p>
-                        <h4 class="content-title"><b>Projeto STEAM Tocantins</b></h4>
-                        <div class="img-logo1">
-                            <img src="img/logos/steamSemFundo.png" width="144px">
-                        </div>
-                        <p>
-                            STEAM Tocantins (Science, Technology, Engineering, Arts e Mathematics) é um projeto
-                            realizado
-                            em parceria pela SEDUC, LabTec-UFT e o Programa EPIC (Engajar, Praticar, Integrar e
-                            Colaborar),
-                            que visa promover e disseminar o conhecimento científico, a aprendizagem ativa baseada em
-                            resolução
-                            de problemas, na criatividade e em projetos mão-na-massa (maker) para preparar os alunos e
-                            professores do ensino médio da rede pública estadual e do ensino superior para os desafios
-                            do
-                            futuro como cidadãos digitais ativos e protagonistas da sua própria história de vida.
-                        </p>
+                </section> -->
+                <section class="coordenadores" id="cordenadores">
+                    <div class="titolo">
+                        <h1>Coordenadores</h1>
                     </div>
-                    <div class="column col-right">
-                        <div class="img-card">
-                            <img src="img/stock/metodoSteam.jpg" alt="">
+                    <div class="contener">
+                        <div class="cordenador">
+                            <div class="colEsquesrda">
+                                <img class="codenadorIMG" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/colaboradores/erick.png" width="160px">
+                            </div>
+                            <div class="colDireirta">
+                                <h3 class="nome-cord">MSc. Erick Henrique Silva Góes</h3>
+                                <!--P class="breveDescricao"> cordenador EPIC <br>
+                                                                    edeilsonmilhomer@gmail.com
+
+                                            </P-->
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-      
-
-        </section>
-        <section class="Agenda2" id="Agenda2">
-            <div class="agenda-title">
-                <h3>Cronograma</h3>
-            </div>
-            <div class="event-container1">
-                <div class="eventos">S
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">22</div>
-                            <div class="Mes">Mai</div>
-
+                        <div class="cordenador">
+                            <div class="colEsquesrda">
+                                <img class="codenadorIMG" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/colaboradores/edeilson.png" width="160px">
+                            </div>
+                            <div class="colDireirta">
+                                <h3 class="nome-cord">Dr. Edeilson Milhomem da Silva</h3>
+                                <!--P class="breveDescricao">cordenador EPIC <br>
+                                                                    edeilsonmilhomer@gmail.com
+                                                                    </P-->
+                            </div>
                         </div>
-                    </div>
+                        <div class="cordenador">
+                            <div class="colEsquesrda">
+                                <img class="codenadorIMG" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/colaboradores/warley.png" width="160px">
+                            </div>
+                            <div class="colDireirta">
+                                <h3 class="nome-cord">Dr. Warley Gramacho da Silva</h3>
+                                <!--P class="breveDescricao">
+                                                cordenador EPIC <br>
+                                                wgramacho@uft.edu.br
+                                                                    
+                                            </P-->
+                            </div>
+                        </div>
 
-                    <div class="evento-right">
-                        <h3 class="evento-title"><b>MODULO I:</b> Programação de
-                            Drones
-                            com Arduino</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA I</h3>
-                            <b>Horário:</b> 8h às 12h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
+                    </div>
+                    </div>
+                    <section class="equipes" id="equipes">
+                        <div class="titulo">
+                            <h1>EQUIPES</h1>
+                        </div>
+
+                        <div class="container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>EQUIPES</th>
+                                        <th>PARTICIPANTES</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bandeira"> <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/equipes/ingenuity/logo.png">
+                                            <h3>INGENUITY</h3>
+                                        </td>
+                                        <td class="membros">
+                                            <p>Profº Marcelo<br>Emmanuel<br>Adão</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bandeira"><img
+                                                src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/equipes/cavaleirosPersistencia/photo_2021-05-31_16-15-56.jpg">
+                                            <h3>C. PERSISTÊNCIA</h3>
+                                        </td>
+                                        <td class="membros">
+                                            <p>Profº Francisco<br>Jeferson<br>Guilherme<br>Pedro A.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bandeira"> <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/equipes/robotic/photo_2021-05-31_16-28-48.jpg">
+                                            <h3>ROBOTIC</h3>
+                                        </td>
+                                        <td class="membros">
+                                            <p>Profº Thiago<br>Arthur S.<br>Arthur<br>Robson</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bandeira"><img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/equipes/teamAtena/photo_2021-05-31_16-26-51.jpg">
+                                            <h3> TEAM ATENA</h3>
+                                        </td>
+                                        <td class="membros">
+                                            <p>Profº Marco<br>Hyllary<br>Bianca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bandeira"><img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/equipes/eagle/logo.png">
+                                            <h3>EAGLE</h3>
+                                        </td>
+                                        <td class="membros">
+                                            <p>Profº Raimundo<br>Pedro P.<br>Raphael</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="Apoio" id="Apoio">
+                        <div class="titolo">
+                            <h1>Apoio</h1>
+                        </div>
+                        <div class="contener">
+                            <!--1-->
+                            <div class="apoio1">
+                                <div class="colEsquesrda1">
+                                    <img class="img1" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/mcticSemFundo.png" width="350px">
+                                </div>
+                            </div>
+                            <!--2-->
+                            <div class="apoio1">
+                                <div class="colEsquesrda1">
+                                    <img class="img2" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/cnpqSemFundo.png" width="160px">
+                                </div>
+                            </div>
+                            <!--3-->
+                            <div class="apoio1">
+                                <div class="colEsquesrda1">
+                                    <img class="img3" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/ccompComFundo.png" width="240px">
+                                </div>
+                            </div>
+                            <!--4-->
+                            <div class="apoio1">
+                                <div class="colEsquesrda1">
+                                    <img class="img4" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/NCASemFundo.png" width="100px">
+                                </div>
+                            </div>
+                            <!--5-->
+                            <div class="apoio1">
+                                <div class="colEsquesrda1">
+                                    <img class="img5" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/proexSemFundo.png" width="250px">
+                                </div>
+                            </div>
+                            <!--6-->
+                            <div class="apoio1">
+                                <div class="colEsquesrda1">
+                                    <img class="img5" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/arenaEducaSemFundo.png" width="250px">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="galeria" id="galeria">
+                        <div class="titolo">
+                            <h1>Galeria</h1>
+                        </div>
+                        <div class="contentt">
+                            <div class="card">
+                                <div class="card-img">
+                                    <a href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1819.JPG" class="image">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1819.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <a href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1820.JPG" class="image">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1820.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <a href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1880.JPG" class="image">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1880.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contentt">
+                            <div class="card">
+                                <div class="card-img">
+                                    <a href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_9436.JPG" class="image">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_9436.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <a href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1755.JPG" class="image">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloII/IMG_1755.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <a href="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloI/printreuniao2.png" class="image">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/galeriaFotos/moduloI/printreuniao2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--div class="card">
+                        <div class="vidio">
+                            <iframe src="https://www.youtube.com/embed/8exspV0Dg7Q" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div-->
+                        </div>
+
+                        <div class="title">
+                            <a href="pages/galeria.html" class="btn">veja mais</a>
+                        </div>
+
+                    </section>
+
+                    <section class="depoimentos" id="depoimentos">
+                        <div class="depo_slider">
+                            <div class="depo_myslider" style="display: block;">
+                                
+                                    <div class="depo_tex">
+                                        <div class="Titulo-dep">
+                                        
+                                        </div>
+                                        <div class="texto-dep">
+                                            <h1>Depoimentos</h1>
+                                            <h3>"O projeto despertou muito companheirismo, pois trabalhamos em duplas para conseguir fazer os desafios propostos. [...] 
+                                                <br>As minhas expectativas foram atendidas, já que havia professor ajudando, estava tudo organizado e isso nos motivou a aprender mais. [...]"
+                                                </h3>
+                                                <p><b>
+                                                    Hillary Eduarda de Carvalho Faria
+                                                    </b><br>
+                                                                                                
+                                                    Aluna - Escola Estadual Vale do Sol
+                                                    </p>
+                                                    <!-- esse projeto me despertou muito companheirismo, pois a gnt teve que trabalhar em dupla pra poder conseguir fazer alguma coisa dar certo, conseguir ligar todos 
+                                                    os meios, as minhas expectativas quando entrei nesse projeto foi as que justamente foram implantadas que era ali o professor ajudndo, tudo organizado, 
+                                                    a gente ta num relacionamento pra tudo dar certo na medida do possivel e acaba se sentindo motivado  a aprender mais pq a gnt ve "ah isso aqui deu certo,
+                                                    pq a gnt não pode continuar?" a gente acaba se sentindo motivado sim e durante o projeto teve varios desafios com recompensa e isso incentivou 
+                                                    os meninos a fazer mais com que desse certo                                      -->
+                                        </div>
+                                    </div>
+                                
+                                    <div class="transparente"></div>
+                                    <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/depoimentos/hillaryDepoimento.jpg">
+                            </div>    
+                            <div class="depo_myslider">
+                                <div class="depo_tex">
+                                    <h1>Depoimentos</h1>
+                                        <h3>"Quando o projeto Drones de Baixo Custo chega a escola pública, 
+                                            proporciona aos alunos a possibilidade de aprender e se desenvolver.
+                                            É de extrema importância que 
+                                            eles tenham esse primeiro contato com esse tipo de tecnologia para evoluírem."
+                                            </h3>
+                                            <p><b>Marcelo Rossi</b><br>
+                                                Professor - Centro de Ensino Médio de Taquaralto </p>
+                                    
+                                </div>
+                                <div class="transparente"></div>
+                        
+                                <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/depoimentos/marceloDepoimento.jpg">
+                            </div>
+                            <div class="depo_myslider">
+                                <div class="depo_tex">
+                                    
+                                    <h1>Depoimentos</h1>
+                                    <h3>"Esse projeto envolve várias áreas da tecnologia: modelagem,
+                                        impressão 3D, programação e hardware. 
+                                        <br> Foi de extrema importância 
+                                        para desenvolver o meu desejo de fazer uma 
+                                        faculdade na área de tecnologia e seguir uma carreira nesse caminho."
+                                        </h3>
+                                        <p><b>Emannuel O. Pedreira</b><br>
+                                            Aluno - Centro de Ensino Médio de Taquaralto </p>
+                                </div>
+                                <div class="transparente"></div>
+                        
+                                <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/depoimentos/emannuelDepoimento.jpg">
+                            </div>  
+                            <div class="depo_myslider">
+                                <div class="depo_tex">
+                                    <h1>Depoimentos</h1>
+                                        <h3>"Ao participar, tive contato com equipamentos e componentes
+                                            que eu não conhecia e não tinha trabalhado antes. [...]<br>
+                                            Com o projeto pude ficar motivada a aprender mais sobre robótica e aprimorei o que já conhecia do blender."
+                                        </h3>
+                                            <p><b>Bianca de Barros Brito</b><br>
+                                                Aluna - Universidade Federal do Tocantins </p>
+                                    
+                                </div>
+                                <div class="transparente"></div>
+                        
+                                <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/depoimentos/biancaDepoimento.jpg">
+                            </div>  
+                            <div class="depo_dotsbox" style="text-align:center">
+                                <span class="depo_dot" onclick="currentSlides(1)"></span>
+                                <span class="depo_dot" onclick="currentSlides(2)"></span>
+                                <span class="depo_dot" onclick="currentSlides(3)"></span>
+                                <span class="depo_dot" onclick="currentSlides(4)"></span>
+                                </div>
+                        </div> 
+                    </section>
+
+                    <section class="Cases" id="Cases">
+                        <!--principais eventos-->
+                        <div class="titlo">
+                            <h1>Publicações</h1>
+                        </div>
+                        <div class="contener">
+                            <div class="card">
+                                <a href="pages/artigopreaula1.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/palestra.png">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pré-Aula I</h3>
+                                        <p> MODULO I: INTRODUÇÃO À MODELAGEM 3D COM BLENDER</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
                                 <a href="pages/artigoaula1.html">
-                                    <!--img src="img/icon/relogio.png" alt="" /--> Saiba Mais
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/palestra.png">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Aula I</h3>
+                                        <p>MODULO I: INTRODUÇÃO À MODELAGEM 3D COM BLENDER</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="pages/artigoaula2.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/palestra.png">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Aula II</h3>
+                                        <p>MODULO 1: INTRODUÇÃO À MODELAGEM 3D COM BLENDER</p>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">29</div>
-                            <div class="Mes">Mai</div>
-
-                        </div>
-                    </div>
-
-                    <div class="evento-right">
-                        <h3 class="evento-title"><b>MODULO I:</b> Programação de
-                            Drones
-                            com Arduino</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA II</h3>
-                            <b>Horário:</b> 8h às 12h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
-                                <a href="pages/artigoaula2.html">
-                                    <!--img src="img/icon/relogio.png" alt="" /--> Saiba Mais
-                                   </a>
+                        <div class="contener">
+                            <div class="card">
+                                <a href="pages/artigoaula3.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/evento.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pré-Aula I</h3>
+                                        <p> MODULO II: INTRODUÇÃO À IMPRESSÃO 3D</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="pages/artigoaula4.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/evento.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Aula I</h3>
+                                        <p>MODULO II: INTRODUÇÃO À IMPRESSÃO 3D</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="pages/artigoaula5.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/evento.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Aula II</h3>
+                                        <p>MODULO II: INTRODUÇÃO À IMPRESSÃO 3D</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="eventos">
-
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">12</div>
-                            <div class="Mes">Jun</div>
-
-                        </div>
-                    </div>
-
-                    <div class="evento-right">
-                        <h3 class="evento-title2"><b>MODULO ii:</b> Introdução à
-                            Impressão 3D</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA I</h3>
-                            <b>Horário:</b> 8h às 12h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
-                                <a href="pages/artigoaula4.html"><!--img src="img/icon/relogio.png" alt="" /-->Saiba
-                                    Mais</a>
+                        <div class="contener">
+                            <div class="card">
+                                <a href="pages/artigoaula6.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/arduinos.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pré-Aula I</h3>
+                                        <p>MODULO III: PROGRAMAÇÃO DE DRONES COM ARDUINO </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="pages/artigoaula7.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/arduinos.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Aula I</h3>
+                                        <p>MODULO III: PROGRAMAÇÃO DE DRONES COM ARDUINO </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="pages/artigoaula8.html">
+                                    <div class="imagem-evento">
+                                        <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/artigos/arduinos.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Aula II</h3>
+                                        <p>MODULO III: PROGRAMAÇÃO DE DRONES COM ARDUINO </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">19</div>
-                            <div class="Mes">Jun</div>
-
-                        </div>
-                    </div>
-
-                    <div class="evento-right">
-                        <h3 class="evento-title2"><b>MODULO ii:</b> Introdução à
-                            Impressão 3D</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA II</h3>
-                            <b>Horário:</b> 8h às 12h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
-                                <a href="pages/artigoaula5.html"><!--img src="img/icon/relogio.png" alt="" /-->Saiba
-                                    Mais</a>
+                    <section id="contato">
+                        <div class="container">
+                            <!-- inicio container -->
+                            <div class="row">
+                                <!-- inicio row -->
+                                <div class="col-md-2">
+                                    <img class="logo-roda" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/logo.png" width="20%">
+                                    <img class="logo-roda" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/labtecBrancoSemFundo.png" width="10px">
+                                    <img class="logo-roda" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/logos/uftSemFundo.png" width="20%">
+                                </div>
+                                <div class="col-md-2">
+                                    <h4> contato </h4>
+                                    <ul class="navbar-nav">
+                                        <li>
+                                            <a href=""> Contato </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--div class="col-md-2">
+                                    <h4> parcerias </h4>
+                                    <ul  class="navbar-nav">
+                                        <li><a href=""> LabTec </a></li>
+                                        <li><a href=""> CComp - UFT </a></li>
+                                        <li><a href="https://ww2.uft.edu.br//"> UFT </a></li>
+                                        <li><a href=""> PROEX </a></li>
+                                    </ul>
+                                </div-->
+                                <div class="col-md-2">
+                                    <h4> Nos encontre </h4>
+                                    <ul class="navbar-nav">
+                                        <li>
+                                            <a href="">
+                                                UFT - Bloco III
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4> Redes Sociais</h4>
+                                    <ul class="navbar-nav">
+                                        <li>
+                                            <a href="https://www.instagram.com/epicteam.dev/">
+                                                <img class="insta" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/icon/instagram.svg" width="10px">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <!--li>
+                                            <a class="espaco" href="">
+                                                <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/icon/discord.svg" width="40px">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <h4>RedeS Sociais</h4>
+                                            <a  class="espaco" href="https://www.instagram.com/epicteam.dev/">
+                                                <img class="inst" src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/icon/instagram.svg" width="40px">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a  class="espaco" href="">
+                                                <img src="https://dronesdebaixocusto-images.s3.us-east-2.amazonaws.com/img/icon/twitter.svg" width="40px">
+                                            </a>
+                                        </li-->
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
 
-                <div class="eventos">
-
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">26</div>
-                            <div class="Mes">Jun</div>
-
-                        </div>
-                    </div>
-
-                    <div class="evento-right">
-                        <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
-                            Drones
-                            com Arduino</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA I</h3>
-                            <b>Horário:</b> 8h às 12h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
-                                <a href="pages/artigoaula6.html"><!--img src="img/icon/relogio.png" alt="" /--> Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">03</div>
-                            <div class="Mes">Jul</div>
-
-                        </div>
-                    </div>
-
-                    <div class="evento-right">
-                        <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
-                            Drones
-                            com Arduino</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA II</h3>
-                            <b>Horário:</b> 8h às 12h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
-                                <a href="pages/artigoaula7.html"><!--img src="img/icon/relogio.png" alt="" /--> Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eventos">
-
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">10</div>
-                            <div class="Mes">Jul</div>
-
-                        </div>
-                    </div>
-
-                    <div class="evento-right">
-                        <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
-                            Drones
-                            com Arduino</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA III</h3>
-                            <b>Horário:</b> 8h às 18h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
-                                <a href="pages/artigoaula8.html"><!--img src="img/icon/relogio.png" alt="" /--> Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="evento-left">
-                        <div class="eveto-data">
-                            <div class="data">31</div>
-                            <div class="Mes">Jul</div>
-
-                        </div>
-                    </div>
-
-                    <div class="evento-right">
-                        <h3 class="evento-title3"><b>MODULO iii:</b> Programação de
-                            Drones
-                            com Arduino</h3>
-                        <div class="evento-discricao">
-                            <h3>AULA IV</h3>
-                            <b>Horário:</b> 8h às 12h<br>
-                            <b>Local:</b> LabTec-UFT no BLOCO III<br>
-                            <div class="evento-hora">
-                                <a href="index.html"><img src="img/icon/relogio.png" alt="" /> 8h </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           </div>
-
-        </section>
-        <section class="coordenadores" id="cordenadores">
-            <div class="titolo">
-                <h1>Coordenadores</h1>
-            </div>
-            <div class="contener">
-                <div class="cordenador">
-                    <div class="colEsquesrda">
-                        <img class="codenadorIMG" src="img\colaboradores\erick.png" width="160px">
-                    </div>
-                    <div class="colDireirta">
-                        <h3 class="nome-cord">MSc. Erick Henrique Silva Góes</h3>
-                        <!--P class="breveDescricao"> cordenador EPIC <br>
-                                                            edeilsonmilhomer@gmail.com
-
-                                    </P-->
-                    </div>
-                </div>
-                <div class="cordenador">
-                    <div class="colEsquesrda">
-                        <img class="codenadorIMG" src="img\colaboradores\edeilson.png" width="160px">
-                    </div>
-                    <div class="colDireirta">
-                        <h3 class="nome-cord">Dr. Edeilson Milhomem da Silva</h3>
-                        <!--P class="breveDescricao">cordenador EPIC <br>
-                                                            edeilsonmilhomer@gmail.com
-                                                            </P-->
-                    </div>
-                </div>
-                <div class="cordenador">
-                    <div class="colEsquesrda">
-                        <img class="codenadorIMG" src="img\colaboradores\warley.png" width="160px">
-                    </div>
-                    <div class="colDireirta">
-                        <h3 class="nome-cord">Dr. Warley Gramacho da Silva</h3>
-                        <!--P class="breveDescricao">
-                                        cordenador EPIC <br>
-                                        wgramacho@uft.edu.br
-                                                            
-                                    </P-->
-                    </div>
-                </div>
-
-            </div>
-            </div>
-            <section class="rank">
-                <div class="titulo">
-                    <h1>RANKING DRONES DE BAIXO CUSTO</h1>
-                </div>
-
-                <div class="container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>POSIÇÃO</th>
-                                <th>EQUIPES</th>
-                                <th>PONTOS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p>01</p>
-                                </td>
-                                <td class="bandeira"> <img src="img\equipes\ingenuity\logo.png">
-                                    <h3>INGENUITY</h3>
-                                </td>
-                                <td class="coin">
-                                    <p>60</p><img src="img\icon\coin.png">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>--</p>
-                                </td>
-                                <td class="bandeira"><img
-                                        src="img\equipes\cavaleirosPersistencia\photo_2021-05-31_16-15-56.jpg">
-                                    <h3>C. PERSISTÊNCIA</h3>
-                                </td>
-                                <td class="coin">
-                                    <p>60</p><img src="img\icon\coin.png">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>--</p>
-                                </td>
-                                <td class="bandeira"> <img src="img\equipes\robotic\photo_2021-05-31_16-28-48.jpg">
-                                    <h3>ROBOTIC</h3>
-                                </td>
-                                <td class="coin">
-                                    <p>60</p><img src="img\icon\coin.png">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>--</p>
-                                </td>
-                                <td class="bandeira"><img src="img\equipes\teamAtena\photo_2021-05-31_16-26-51.jpg">
-                                    <h3> TEAM ATENA</h3>
-                                </td>
-                                <td class="coin">
-                                    <p>60</p><img src="img\icon\coin.png">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>--</p>
-                                </td>
-                                <td class="bandeira"><img src="img\equipes\eagle\logo.png">
-                                    <h3>EAGLE</h3>
-                                </td>
-                                <td class="coin">
-                                    <p>60</p><img src="img\icon\coin.png">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section class="Apoio" id="Apoio">
-                <div class="titolo">
-                    <h1>Apoio</h1>
-                </div>
-                <div class="contener">
-                    <!--1-->
-                    <div class="apoio1">
-                        <div class="colEsquesrda1">
-                            <img class="img1" src="img\logos\mcticSemFundo.png" width="350px">
-                        </div>
-                    </div>
-                    <!--2-->
-                    <div class="apoio1">
-                        <div class="colEsquesrda1">
-                            <img class="img2" src="img\logos\cnpqSemFundo.png" width="160px">
-                        </div>
-                    </div>
-                    <!--3-->
-                    <div class="apoio1">
-                        <div class="colEsquesrda1">
-                            <img class="img3" src="img\logos\ccompComFundo.png" width="240px">
-                        </div>
-                    </div>
-                    <!--4-->
-                    <div class="apoio1">
-                        <div class="colEsquesrda1">
-                            <img class="img4" src="img\logos\NCASemFundo.png" width="100px">
-                        </div>
-                    </div>
-                    <!--5-->
-                    <div class="apoio1">
-                        <div class="colEsquesrda1">
-                            <img class="img5" src="img\logos\proexSemFundo.png" width="250px">
-                        </div>
-                    </div>
-                    <!--6-->
-                    <div class="apoio1">
-                        <div class="colEsquesrda1">
-                            <img class="img5" src="img\logos\arenaEducaSemFundo.png" width="250px">
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </main>
 
 
-            <section class="galeria" id="galeria">
-                <div class="titolo">
-                    <h1>Galeria</h1>
-                </div>
-                <div class="contentt">
-                    <div class="card">
-                        <div class="card-img">
-                            <a href="img\galeriaFotos\moduloII\IMG_1819.JPG" class="image">
-                                <img src="img\galeriaFotos\moduloII\IMG_1819.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <a href="img\galeriaFotos\moduloII\IMG_1820.JPG" class="image">
-                                <img src="img\galeriaFotos\moduloII\IMG_1820.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <a href="img\galeriaFotos\moduloII\IMG_1880.JPG" class="image">
-                                <img src="img\galeriaFotos\moduloII\IMG_1880.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contentt">
-                    <div class="card">
-                        <div class="card-img">
-                            <a href="img\galeriaFotos\moduloII\IMG_9436.JPG" class="image">
-                                <img src="img\galeriaFotos\moduloII\IMG_9436.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <a href="img\galeriaFotos\moduloII\IMG_1755.JPG" class="image">
-                                <img src="img\galeriaFotos\moduloII\IMG_1755.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <a href="img\galeriaFotos\moduloI\printreuniao2.png" class="image">
-                                <img src="img\galeriaFotos\moduloI\printreuniao2.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!--div class="card">
-                <div class="vidio">
-                    <iframe src="https://www.youtube.com/embed/8exspV0Dg7Q" title="YouTube video player"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div-->
-                </div>
-
-                <div class="title">
-                    <a href="pages/galeria.html" class="btn">veja mais</a>
-                </div>
-
-            </section>
+            <!-- Vendor JS Files -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+            <script src="vendor/php-email-form/validate.js"></script>
+            <script src="vendor/counterup/counterup.min.js"></script>
+            <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+            <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+            <script src="vendor/superfish/superfish.min.js"></script>
+            <script src="vendor/hoverIntent/hoverIntent.js"></script>
+            <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+            <script src="vendor/venobox/venobox.min.js"></script>
+            <script src="vendor/aos/aos.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+            <script src="./JS/main.js"></script>
+            <script src="./JS/depoimentos.js"></script>
+            <script src="JS/config.js"></script>
 
 
-            <section class="Cases" id="Cases">
-                <!--principais eventos-->
-                <div class="titlo">
-                    <h1>Publicações</h1>
-                </div>
-                <div class="contener">
-                    <div class="card">
-                        <a href="pages/artigopreaula1.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\palestra.png">
-                            </div>
-                            <div class="info">
-                                <h3>Pré-Aula I</h3>
-                                <p> MODULO I: INTRODUÇÃO À MODELAGEM 3D COM BLENDER</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="pages/artigoaula1.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\palestra.png">
-                            </div>
-                            <div class="info">
-                                <h3>Aula I</h3>
-                                <p>MODULO I: INTRODUÇÃO À MODELAGEM 3D COM BLENDER</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="pages/artigoaula2.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\palestra.png">
-                            </div>
-                            <div class="info">
-                                <h3>Aula II</h3>
-                                <p>MODULO 1: INTRODUÇÃO À MODELAGEM 3D COM BLENDER</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="contener">
-                    <div class="card">
-                        <a href="pages/artigoaula3.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\evento.jpg">
-                            </div>
-                            <div class="info">
-                                <h3>Pré-Aula I</h3>
-                                <p> MODULO II: INTRODUÇÃO À IMPRESSÃO 3D</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="pages/artigoaula4.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\evento.jpg">
-                            </div>
-                            <div class="info">
-                                <h3>Aula I</h3>
-                                <p>MODULO II: INTRODUÇÃO À IMPRESSÃO 3D</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="pages/artigoaula5.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\evento.jpg">
-                            </div>
-                            <div class="info">
-                                <h3>Aula II</h3>
-                                <p>MODULO II: INTRODUÇÃO À IMPRESSÃO 3D</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="contener">
-                    <div class="card">
-                        <a href="pages/artigoaula6.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\arduinos.jpg">
-                            </div>
-                            <div class="info">
-                                <h3>Pré-Aula I</h3>
-                                <p>MODULO III: PROGRAMAÇÃO DE DRONES COM ARDUINO </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="pages/artigoaula7.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\arduinos.jpg">
-                            </div>
-                            <div class="info">
-                                <h3>Aula I</h3>
-                                <p>MODULO III: PROGRAMAÇÃO DE DRONES COM ARDUINO </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="pages\artigoaula8.html">
-                            <div class="imagem-evento">
-                                <img src="img\artigos\arduinos.jpg">
-                            </div>
-                            <div class="info">
-                                <h3>Aula II</h3>
-                                <p>MODULO III: PROGRAMAÇÃO DE DRONES COM ARDUINO </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
+        </body>
 
-            <section id="contato">
-                <div class="container">
-                    <!-- inicio container -->
-                    <div class="row">
-                        <!-- inicio row -->
-                        <div class="col-md-2">
-                            <img class="logo-roda" src="img/logos/logo.png" width="20%">
-                            <img class="logo-roda" src="img/logos/labtecBrancoSemFundo.png" width="10px">
-                            <img class="logo-roda" src="img/logos/uftSemFundo.png" width="20%">
-                        </div>
-                        <div class="col-md-2">
-                            <h4> contato </h4>
-                            <ul class="navbar-nav">
-                                <li>
-                                    <a href=""> Contato </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--div class="col-md-2">
-                            <h4> parcerias </h4>
-                            <ul  class="navbar-nav">
-                                <li><a href=""> LabTec </a></li>
-                                <li><a href=""> CComp - UFT </a></li>
-                                <li><a href="https://ww2.uft.edu.br//"> UFT </a></li>
-                                <li><a href=""> PROEX </a></li>
-                            </ul>
-                        </div-->
-                        <div class="col-md-2">
-                            <h4> Nos encontre </h4>
-                            <ul class="navbar-nav">
-                                <li>
-                                    <a href="">
-                                        UFT - Bloco III
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2">
-                            <h4> Redes Sociais</h4>
-                            <ul class="navbar-nav">
-                                <li>
-                                    <a href="https://www.instagram.com/epicteam.dev/">
-                                        <img class="insta" src="img/icon/instagram.svg" width="10px">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul>
-                                <!--li>
-                                    <a class="espaco" href="">
-                                        <img src="img/icon/discord.svg" width="40px">
-                                    </a>
-                                </li>
-                                <li>
-                                    <h4>RedeS Sociais</h4>
-                                    <a  class="espaco" href="https://www.instagram.com/epicteam.dev/">
-                                        <img class="inst" src="img/icon/instagram.svg" width="40px">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a  class="espaco" href="">
-                                        <img src="img/icon/twitter.svg" width="40px">
-                                    </a>
-                                </li-->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-    </main>
-
-
-    <!-- Vendor JS Files -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="vendor/php-email-form/validate.js"></script>
-    <script src="vendor/counterup/counterup.min.js"></script>
-    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="vendor/superfish/superfish.min.js"></script>
-    <script src="vendor/hoverIntent/hoverIntent.js"></script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="vendor/venobox/venobox.min.js"></script>
-    <script src="vendor/aos/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="./JS/main.js"></script>
-    <script src="./JS/depoimentos.js"></script>
-    <script src="JS\config.js"></script>
-
-
-</body>
-
-</html>
+        </html>
